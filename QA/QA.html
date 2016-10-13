@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="2016 YunTech+ Orientation Camp 新生學涯開展營">
+    <meta name="keywords" content="2016 yuntech+, 2016 開展營, 2016雲科開展營">
+    <meta name="author" content="LeeXiao">
+	
+	<link rel="icon" href="../bighead.png">
+
+	<title>2016 YunTech+ Orientation Camp 新生學涯開展營</title>
+	
+	<link href="../style.css" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/activity.js"></script>
+	<!--櫻花飄-->
+	<link href="../leaf/leaf_style.css" rel="stylesheet">
+	<script src="../leaf/leaf_jquery.js" type="text/javascript"></script>
+	<!--------------------------------------------------->
+</head>
+<body style="background:#EAE8E9">
+<a class="fbicon" href="https://www.facebook.com/2016YuntechPlus/" target="_blank"><img id="fb_icon"style="width:100%; height:auto;" src="../FB.png"></a>
+<header>
+	<div id="treeleft"><img id="leftpic" src="../tree_left.png"></div>
+	<div id="treeright"><img id="rightpic" src="../tree_right.png"></div>
+	<div id="sloth" onmouseover="slothcall()" onmouseout="slothout()">
+		<img src="../sloth.png">
+		<audio id="sound">
+			<source src="../slothcall.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<!--櫻花-->
+	<div id="leaf1"></div><div id="leaf2"></div><div id="leaf3"></div><div id="leaf4"></div><div id="leaf5"></div><div id="leaf6"></div><div id="leaf7"></div>
+	<div id="leaf8"></div><div id="leaf9"></div><div id="leaf10"></div><div id="leaf11"></div><div id="leaf12"></div><div id="leaf13"></div><div id="leaf14"></div><div id="leaf15"></div>
+
+	<nav id="bar">
+			<div id="tinybar" style="float:left;"><div id="menu-toggle" onclick="tinybar()">&#9776;</div><a href="../home.html"><img style="width: 140px; height: 40px;"src="../navbar/yuntech_logo_2.png" width="200px" height="75px"></a></div>
+			<ul class="tinymenu">
+				<li id="d1"onclick="tinybar_down(this)"><a>營隊宗旨</a>
+					<ul id="down1" class="tinymenu_down">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html">最新資訊</a></li>
+				<li id="d2"onclick="tinybar_down(this)"><a>活動資訊</a>
+					<ul id="down2" class="tinymenu_down">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li id="d3"onclick="tinybar_down(this)"><a>營隊組織</a>
+					<ul id="down3" class="tinymenu_down">
+						<li><a href="../team/workteam.html">執行團隊</a></li>
+						<li><a href="../team/associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html">社團簡介</a></li>
+				<li id="d4"onclick="tinybar_down(this)"><a>精彩回顧</a>
+					<ul id="down4" class="tinymenu_down">
+						<li><a href="../lastyear/picture.html">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li id="d5"onclick="tinybar_down(this)"><a>交通資訊</a>
+					<ul id="down5" class="tinymenu_down">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html">相關連結</a></li>
+				<li id="d6"onclick="tinybar_down(this)"><a>Ｑ＆Ａ</a>
+					<ul id="down6" class="tinymenu_down">
+						<li><a href="QA.html">常見問題</a></li>
+						<li><a href="leave.html">請假流程</a></li>
+						<li><a href="2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+	</nav>
+	
+	<div id="mynavbar" class="fixed" style="background-color:rgba(232,233,234,0.75);">
+		<nav>
+			<ul>
+				<li><a href="../home.html"><img src="../navbar/yuntech_logo.png" width="220px" height="67px"></a></li>
+				<li><a><img src="../navbar/01.png" width="50px" height="50px"><br>營隊宗旨</a>
+					<ul class="dropdown-menu">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html"><img src="../navbar/02.png" width="40px" height="50px"><br>最新資訊</a></li>
+				<li><a><img src="../navbar/03.png" width="55px" height="50px"><br>活動資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li><a><img src="../navbar/04.png" width="50px" height="50px"><br>營隊組織</a>
+					<ul class="dropdown-menu">
+						<li><a href="../team/workteam.html">執行團隊</a></li>
+						<li><a href="../team/associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html"><img src="../navbar/05.png" width="50px" height="50px"><br>社團簡介</a></li>
+				<li><a><img src="../navbar/06.png" width="50px" height="50px"><br>精彩回顧</a>
+					<ul class="dropdown-menu">
+						<li><a href="../lastyear/video.html">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li><a><img src="../navbar/07.png" width="50px" height="50px"><br>交通資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html"><img src="../navbar/08.png" width="50px" height="50px"><br>相關連結</a></li>
+				<li><a><img src="../navbar/09.png" width="50px" height="50px"><br>Ｑ＆Ａ</a>
+					<ul class="dropdown-menu">
+						<li><a href="QA.html">常見問題</a></li>
+						<li><a href="leave.html">請假流程</a></li>
+						<li><a href="2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>	
+</header>
+	<div id="QA">
+		<div class="QAbox"><img src="Q1.png"><span id="Q1">什麼是<br>YunTech<sup>+</sup>新生學涯開展營？<div><span id="A1">「YunTech<sup>+</sup>新生學涯開展營」<br>改變以往舊有的新生訓練模式，以更活潑的營隊方式帶領各位YunTech新鮮人進行始業活動，而並非一般的娛樂性營隊。<br>　　本營隊主要是為了讓YunTech新鮮人認識校園環境，不僅能幫助新生適應新環境的挑戰，同時還能在剛入雲科之際獲得豐富的學習經驗！<br>　　執行團隊係由雲科社團界富有熱忱的資深學長姐組成，並由各系系學會優秀的學長、姊擔任隊輔，帶領新生參與各式活潑創意、認識自我、探索校園的課程。</span></div></div>
+		<div class="QAbox"><img src="Q2.png"><span id="Q2">如果有事不能參加怎麼辦？<div><span id="A2">　　為了讓YunTech新鮮人能適應大學生活、善用學校學習資源以及瞭解自己的需求，我們希望同學全程參與，因此105學年度入學的全體大學部新生皆必須參加。<br>　　若營期間（09/05~09/07）因故無法參加而有不克出席之情況，請詳閱<a href="leave.html" style="color:#FFF; font-size:16pt">請假流程</a>完成請假手續。</span></div></div>
+		<div class="QAbox"><img src="Q3.png"><span id="Q3">這個活動要收費嗎？<br>會附餐嗎？<div><span id="A3">　　用餐部分將由各系學會負責與規劃，可能會跟各位酌收餐費，其餘將不會向新生收取任何活動費用。</span></div></div>
+		<div class="QAbox"><img src="Q4.png"><span id="Q4">活動內容有哪些？<div><span id="A4">　　營期間執行團隊將設計一系列相關課程與活動讓YunTech新鮮人更快速適應大學新生活，透過這三天的營隊課程，幫助各位迅速熟悉雲科大新環境、瞭解學校核心價值、認識校園生活及學習資源，更能在開學之際拓展人際關係！<br>　　此外，將由各院系安排院系專業導航課程及院系迎新活動，協助新生認識各院系提供之學習資源、促進系向心力凝聚。營期間的詳細活動內容可至<a href="../activity/day1.html" style="color:#FFF; font-size:16pt">課程表</a>瀏覽。</span></div></div>
+		<div class="QAbox"><img src="Q5.png"><span id="Q5">每天活動時間都是幾點到幾點呢？<div><span id="A5">營隊課程時間為每天上午09：00至21：00。活動課程內容可至<a href="../activity/day1.html" style="color:#FFF; font-size:16pt">課程表</a>瀏覽。</span></div></div>
+		<div class="QAbox"><img src="Q6.png"><span id="Q6">我們都在哪裡上課？<div><span id="A6">　　主要上課的地點位於雲林科技大學大禮堂，但仍有遍及校園各角落的上課地點，兼具室內靜態課程與室外走動式的課程，加速同學認識YunTech校園新環境，課程充滿活潑創意！</span></div></div>
+		<div class="QAbox"><img src="Q7.png"><span id="Q7">營期間的住宿要住哪裡？<div><span id="A7">　　本營隊不集合住宿，因此住學校宿舍的YunTech新鮮人直接在宿舍留宿；非住宿的YunTech新鮮人在自己的校外租屋處住宿即可。</span></div></div>
+		<div class="QAbox"><img src="Q10.png"><span id="Q8">三天的活動期間中，晚上可不可以離開宿舍？<div><span id="A8">　　營期三天活動期間，為了顧慮團體活動規範及安全考量，原則上新生在晚上請與小隊共同行動，勿落單或自行離開宿舍，非必要情況皆請待在宿舍，若確有需要離開請告知隊輔或與工作人員聯繫。</span></div></div>
+		<div class="QAbox"><img src="Q9.png"><span id="Q9">如果活動期間，有些時間不方便參與，該怎麼辦呢？<div><span id="A9">　　為顧慮新生的安全考量，離營需辦理離營手續，若有相關不可抗拒之原因需要填寫離營單，需告知隊輔學長姐，並請於營隊中向活動服務台索取填寫。</span></div></div>
+		<div class="QAbox"><img src="Q8.png"><span id="Q10">還有疑問的話怎麼辦？<div><span id="A10">「YunTech<sup>+</sup>新生學涯開展營」<br>服務平台諮詢電話05-5342601分機2323吳添銘先生。<br>也可以將您的疑問以電子信件mail至yuntech.camp@gmail.com<br>或私訊FB粉絲專頁<a href="https://www.facebook.com/2016YunTechPlus/" style="color:#FFF; font-size:16pt" target="_blank">【2016 YunTech<sup>+</sup> Orientation Camp 新生學涯開展營】</a>我們會迅速回覆您。<br>若尚有營隊以外任何疑問也可連結至<a href="https://www.facebook.com/2016YunTechPlus/" style="color:#FFF; font-size:16pt" target="_blank">新生入學服務網</a>。<div></div>
+	</div>
+</body>
+<footer>
+	
+</footer>
+</html>
+  

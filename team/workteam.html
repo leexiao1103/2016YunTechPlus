@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="2016 YunTech+ Orientation Camp 新生學涯開展營">
+    <meta name="keywords" content="2016 yuntech+, 2016 開展營, 2016雲科開展營">
+    <meta name="author" content="LeeXiao">
+	
+	<link rel="icon" href="../bighead.png">
+
+	<title>2016 YunTech+ Orientation Camp 新生學涯開展營</title>
+	
+	<link href="../style.css" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/activity.js"></script>
+	<!--櫻花飄-->
+	<link href="../leaf/leaf_style.css" rel="stylesheet">
+	<script src="../leaf/leaf_jquery.js" type="text/javascript"></script>
+	<!--------------------------------------------------->
+	<script src="../js/work_pic.js"></script>
+	
+	
+</head>
+<body style="background:#EAE8E9" onload="setup()">
+<a class="fbicon" href="https://www.facebook.com/2016YuntechPlus/" target="_blank"><img id="fb_icon"style="width:100%; height:auto;" src="../FB.png"></a>
+<header>
+	<div id="treeleft"><img id="leftpic" src="../tree_left.png"></div>
+	<div id="treeright"><img id="rightpic" src="../tree_right.png"></div>
+	<div id="sloth" onmouseover="slothcall()" onmouseout="slothout()">
+		<img src="../sloth.png">
+		<audio id="sound">
+			<source src="../slothcall.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<!--櫻花-->
+	<div id="leaf1"></div><div id="leaf2"></div><div id="leaf3"></div><div id="leaf4"></div><div id="leaf5"></div><div id="leaf6"></div><div id="leaf7"></div>
+	<div id="leaf8"></div><div id="leaf9"></div><div id="leaf10"></div><div id="leaf11"></div><div id="leaf12"></div><div id="leaf13"></div><div id="leaf14"></div><div id="leaf15"></div>
+
+	<nav id="bar">
+			<div id="tinybar" style="float:left;"><div id="menu-toggle" onclick="tinybar()">&#9776;</div><a href="../home.html"><img style="width: 140px; height: 40px;"src="../navbar/yuntech_logo_2.png" width="200px" height="75px"></a></div>
+			<ul class="tinymenu">
+				<li id="d1"onclick="tinybar_down(this)"><a>營隊宗旨</a>
+					<ul id="down1" class="tinymenu_down">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html">最新資訊</a></li>
+				<li id="d2"onclick="tinybar_down(this)"><a>活動資訊</a>
+					<ul id="down2" class="tinymenu_down">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li id="d3"onclick="tinybar_down(this)"><a>營隊組織</a>
+					<ul id="down3" class="tinymenu_down">
+						<li><a href="workteam.html">執行團隊</a></li>
+						<li><a href="associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html">社團簡介</a></li>
+				<li id="d4"onclick="tinybar_down(this)"><a>精彩回顧</a>
+					<ul id="down4" class="tinymenu_down">
+						<li><a href="../lastyear/picture.html">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li id="d5"onclick="tinybar_down(this)"><a>交通資訊</a>
+					<ul id="down5" class="tinymenu_down">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html">相關連結</a></li>
+				<li id="d6"onclick="tinybar_down(this)"><a>Ｑ＆Ａ</a>
+					<ul id="down6" class="tinymenu_down">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+	</nav>
+	
+	<!--<div id="flip" onmouseover="navopen()" >Click to slide down panel</div>	-->
+	<div id="mynavbar" class="fixed" style="background-color:rgba(232,233,234,0.75);">
+		<nav>
+			<ul>
+				<li><a href="../home.html"><img src="../navbar/yuntech_logo.png" width="220px" height="67px"></a></li>
+				<li><a><img src="../navbar/01.png" width="50px" height="50px"><br>營隊宗旨</a>
+					<ul class="dropdown-menu">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/clothes.html">營隊公約</a></li>
+						<li><a href="../purpose/convention.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html"><img src="../navbar/02.png" width="40px" height="50px"><br>最新資訊</a></li>
+				<li><a><img src="../navbar/03.png" width="55px" height="50px"><br>活動資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li><a><img src="../navbar/04.png" width="50px" height="50px"><br>營隊組織</a>
+					<ul class="dropdown-menu">
+						<li><a href="workteam.html">執行團隊</a></li>
+						<li><a href="associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html"><img src="../navbar/05.png" width="50px" height="50px"><br>社團簡介</a></li>
+				<li><a><img src="../navbar/06.png" width="50px" height="50px"><br>精彩回顧</a>
+					<ul class="dropdown-menu">
+						<li><a href="../lastyear/picture.htmlml">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li><a><img src="../navbar/07.png" width="50px" height="50px"><br>交通資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html"><img src="../navbar/08.png" width="50px" height="50px"><br>相關連結</a></li>
+				<li><a><img src="../navbar/09.png" width="50px" height="50px"><br>Ｑ＆Ａ</a>
+					<ul class="dropdown-menu">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>	
+	<div id="workteam_container">
+		<div class="grouptag">
+			<ul>
+				<li><a id="A" onclick="goGroup(this)">總召/秘書組</a></li>
+				<li><a id="B" onclick="goGroup(this)">行政組</a></li>
+				<li><a id="C" onclick="goGroup(this)">研修組</a></li>
+				<li><a id="D" onclick="goGroup(this)">活動組</a></li>
+				<li><a id="E" onclick="goGroup(this)">隊輔組</a></li>
+				<li><a id="F" onclick="goGroup(this)">美宣組</a></li>
+				<li><a id="G" onclick="goGroup(this)">資訊組</a></li>
+				<li><a id="H" onclick="goGroup(this)">攝錄組</a></li>
+				<li><a id="I" onclick="goGroup(this)">器材組</a></li>
+			</ul>
+		</div>
+		<div id="workteam">
+			<div id="workteam_logo" style="position:relative;margin:0 auto;height:100%;padding-top:20px;text-align:center;">
+				<img  src="img/Logo.png" style="width:auto;height:100%;line-height: 50vh;">
+			</div>
+				
+			<div id="Agroup">
+				<div class="coin"></div>
+				<img id="A_0" class="coin" src="img/A.jpg">
+				<img id="A_1" class="coin" src="img/A1.jpg" style="opacity:0">
+				<img id="A_2" class="coin" src="img/A2.jpg" style="opacity:0">
+				<img id="A_3" class="coin" src="img/A3.jpg" style="opacity:0">
+				<img id="A_4" class="coin" src="img/A4.jpg" style="opacity:0">
+				<img id="coin1" class="smallcoin selected" onclick="switchPicContext(this)" src="img/A1.jpg">
+				<img id="coin2" class="smallcoin selected" onclick="switchPicContext(this)" src="img/A2.jpg">
+				<img id="coin3" class="smallcoin selected" onclick="switchPicContext(this)" src="img/A3.jpg">
+				<img id="coin4" class="smallcoin selected" onclick="switchPicContext(this)" src="img/A4.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameA" class="name" >總召/秘書組</div>
+					<div id="text1" class="pictext1"></div>
+					<div id="text2" class="pictext2"></div>
+					<div id="text3" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Bgroup">
+				<div class="coin"></div>
+				<img id="B_0" class="coin" src="img/B.jpg">
+				<img id="B1" class="coin" src="img/B1.jpg" style="opacity:0">
+				<img id="B2" class="coin" src="img/B2.jpg" style="opacity:0">
+				<img id="B3" class="coin" src="img/B3.jpg" style="opacity:0">
+				<img id="B4" class="coin" src="img/B4.jpg" style="opacity:0">
+				<img id="coin5" class="smallcoin" onclick="switchPicContext(this)" src="img/B1.jpg">
+				<img id="coin6" class="smallcoin" onclick="switchPicContext(this)" src="img/B2.jpg">
+				<img id="coin7" class="smallcoin" onclick="switchPicContext(this)" src="img/B3.jpg">
+				<img id="coin8" class="smallcoin" onclick="switchPicContext(this)" src="img/B4.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameB" class="name">行政組</div>
+					<div id="text4" class="pictext1"></div>
+					<div id="text5" class="pictext2"></div>
+					<div id="text6" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Cgroup">
+				<div class="coin"></div>
+				<img id="C_0" class="coin" src="img/C.jpg">
+				<img id="C1" class="coin" src="img/C1.jpg" style="opacity:0">
+				<img id="C2" class="coin" src="img/C2.jpg" style="opacity:0">
+				<img id="C3" class="coin" src="img/C3.jpg" style="opacity:0">
+				<img id="C4" class="coin" src="img/C4.jpg" style="opacity:0">
+				<img id="coin9" class="smallcoin" onclick="switchPicContext(this)" src="img/C1.jpg">
+				<img id="coin10" class="smallcoin" onclick="switchPicContext(this)" src="img/C2.jpg">
+				<img id="coin11" class="smallcoin" onclick="switchPicContext(this)" src="img/C3.jpg">
+				<img id="coin12" class="smallcoin" onclick="switchPicContext(this)" src="img/C4.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameC" class="name">研修組</div>
+					<div id="text7" class="pictext1"></div>
+					<div id="text8" class="pictext2"></div>
+					<div id="text9" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Dgroup">
+				<div class="coin"></div>
+				<img id="D_0" class="coin" src="img/D.jpg">
+				<img id="D1" class="coin" src="img/D1.jpg" style="opacity:0">
+				<img id="D2" class="coin" src="img/D2.jpg" style="opacity:0">
+				<img id="D3" class="coin" src="img/D3.jpg" style="opacity:0">
+				<img id="D4" class="coin" src="img/D4.jpg" style="opacity:0">				
+				<img id="D5" class="coin" src="img/D5.jpg" style="opacity:0">
+				<img id="coin13" class="smallcoin" onclick="switchPicContext(this)" src="img/D1.jpg">
+				<img id="coin14" class="smallcoin" onclick="switchPicContext(this)" src="img/D2.jpg">
+				<img id="coin15" class="smallcoin" onclick="switchPicContext(this)" src="img/D3.jpg">
+				<img id="coin16" class="smallcoin" onclick="switchPicContext(this)" src="img/D4.jpg">
+				<img id="coin17" class="smallcoin" onclick="switchPicContext(this)" src="img/D5.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameD" class="name">活動組</div>
+					<div id="text10" class="pictext1"></div>
+					<div id="text11" class="pictext2"></div>
+					<div id="text12" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Egroup">
+				<div class="coin"></div>
+				<img id="E_0" class="coin" src="img/E.jpg">
+				<img id="E1" class="coin" src="img/E1.jpg" style="opacity:0">
+				<img id="E2" class="coin" src="img/E2.jpg" style="opacity:0">
+				<img id="E3" class="coin" src="img/E3.jpg" style="opacity:0">
+				<img id="E4" class="coin" src="img/E4.jpg" style="opacity:0">
+				<img id="coin18" class="smallcoin" onclick="switchPicContext(this)" src="img/E1.jpg">
+				<img id="coin19" class="smallcoin" onclick="switchPicContext(this)" src="img/E2.jpg">
+				<img id="coin20" class="smallcoin" onclick="switchPicContext(this)" src="img/E3.jpg">
+				<img id="coin21" class="smallcoin" onclick="switchPicContext(this)" src="img/E4.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameE" class="name">隊輔組</div>
+					<div id="text13" class="pictext1"></div>
+					<div id="text14" class="pictext2"></div>
+					<div id="text15" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Fgroup">
+				<div class="coin"></div>
+				<img id="F_0" class="coin" src="img/F.jpg">
+				<img id="F1" class="coin" src="img/F1.png" style="opacity:0">
+				<img id="F2" class="coin" src="img/F2.png" style="opacity:0">
+				<img id="F3" class="coin" src="img/F3.jpg" style="opacity:0">
+				<img id="F4" class="coin" src="img/F4.jpg" style="opacity:0">
+				<img id="coin22" class="smallcoin" onclick="switchPicContext(this)" src="img/F1.png">
+				<img id="coin23" class="smallcoin" onclick="switchPicContext(this)" src="img/F2.png">
+				<img id="coin24" class="smallcoin" onclick="switchPicContext(this)" src="img/F3.jpg">
+				<img id="coin25" class="smallcoin" onclick="switchPicContext(this)" src="img/F4.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameF" class="name">美宣組</div>
+					<div id="text16" class="pictext1"></div>
+					<div id="text17" class="pictext2"></div>
+					<div id="text18" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Ggroup">
+				<div class="coin"></div>
+				<img id="G_0" class="coin" src="img/G.jpg">
+				<img id="G1" class="coin" src="img/G1.jpg" style="opacity:0">
+				<img id="G2" class="coin" src="img/G2.jpg" style="opacity:0">
+				<img id="G3" class="coin" src="img/G3.jpg" style="opacity:0">
+				<img id="G4" class="coin" src="img/G4.jpg" style="opacity:0">
+				<img id="coin26" class="smallcoin" onclick="switchPicContext(this)" src="img/G1.jpg">
+				<img id="coin27" class="smallcoin" onclick="switchPicContext(this)" src="img/G2.jpg">
+				<img id="coin28" class="smallcoin" onclick="switchPicContext(this)" src="img/G3.jpg">
+				<img id="coin29" class="smallcoin" onclick="switchPicContext(this)" src="img/G4.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameG" class="name">資訊組</div>
+					<div id="text19" class="pictext1"></div>
+					<div id="text20" class="pictext2"></div>
+					<div id="text21" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Hgroup">
+				<div class="coin"></div>
+				<img id="H_0" class="coin" src="img/H.jpg">
+				<img id="H1" class="coin" src="img/H1.jpg" style="opacity:0">
+				<img id="H2" class="coin" src="img/H2.jpg" style="opacity:0">
+				<img id="H3" class="coin" src="img/H3.jpg" style="opacity:0">
+				<img id="H4" class="coin" src="img/H4.jpg" style="opacity:0">
+				<img id="coin30" class="smallcoin" onclick="switchPicContext(this)" src="img/H1.jpg">
+				<img id="coin31" class="smallcoin" onclick="switchPicContext(this)" src="img/H2.jpg">
+				<img id="coin32" class="smallcoin" onclick="switchPicContext(this)" src="img/H3.jpg">
+				<img id="coin33" class="smallcoin" onclick="switchPicContext(this)" src="img/H4.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameH" class="name">攝錄組</div>
+					<div id="text22" class="pictext1"></div>
+					<div id="text23" class="pictext2"></div>
+					<div id="text24" class="pictext3"></div>
+				</div>
+			</div>
+			<div id="Igroup">
+				<div class="coin"></div>
+				<img id="I_0" class="coin" src="img/I.jpg">
+				<img id="I1" class="coin" src="img/I1.jpg" style="opacity:0">
+				<img id="I2" class="coin" src="img/I2.jpg" style="opacity:0">
+				<img id="I3" class="coin" src="img/I3.jpg" style="opacity:0">
+				<img id="coin34" class="smallcoin" onclick="switchPicContext(this)" src="img/I1.jpg">
+				<img id="coin35" class="smallcoin" onclick="switchPicContext(this)" src="img/I2.jpg">
+				<img id="coin36" class="smallcoin" onclick="switchPicContext(this)" src="img/I3.jpg">
+				<div class="Text" style="top: 50%">
+					<div id="nameI" class="name">器材組</div>
+					<div id="text25" class="pictext1"></div>
+					<div id="text26" class="pictext2"></div>
+					<div id="text27" class="pictext3"></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+		
+
+	
+	
+</body>
+</html>
+  

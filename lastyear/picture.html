@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="2016 YunTech+ Orientation Camp 新生學涯開展營">
+    <meta name="keywords" content="2016 yuntech+, 2016 開展營, 2016雲科開展營">
+    <meta name="author" content="LeeXiao">
+	
+	<link rel="icon" href="../bighead.png">
+
+	<title>2016 YunTech+ Orientation Camp 新生學涯開展營</title>
+	
+	<link href="../style.css" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/activity.js"></script>
+	<!--櫻花飄-->
+	<link href="../leaf/leaf_style.css" rel="stylesheet">
+	<script src="../leaf/leaf_jquery.js" type="text/javascript"></script>
+	<!--------------------------------------------------->
+</head>
+<body style="background:#EAE8E9">
+<a class="fbicon" href="https://www.facebook.com/2016YuntechPlus/" target="_blank"><img id="fb_icon"style="width:100%; height:auto;" src="../FB.png"></a>
+<header>
+	<div id="treeleft"><img id="leftpic" src="../tree_left.png"></div>
+	<div id="treeright"><img id="rightpic" src="../tree_right.png"></div>
+	<div id="sloth" onmouseover="slothcall()" onmouseout="slothout()">
+		<img src="../sloth.png">
+		<audio id="sound">
+			<source src="../slothcall.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<!--櫻花-->
+	<div id="leaf1"></div><div id="leaf2"></div><div id="leaf3"></div><div id="leaf4"></div><div id="leaf5"></div><div id="leaf6"></div><div id="leaf7"></div>
+	<div id="leaf8"></div><div id="leaf9"></div><div id="leaf10"></div><div id="leaf11"></div><div id="leaf12"></div><div id="leaf13"></div><div id="leaf14"></div><div id="leaf15"></div>
+
+	<nav id="bar">
+			<div id="tinybar" style="float:left;"><div id="menu-toggle" onclick="tinybar()">&#9776;</div><a href="../home.html"><img style="width: 140px; height: 40px;"src="../navbar/yuntech_logo_2.png" width="200px" height="75px"></a></div>
+			<ul class="tinymenu">
+				<li id="d1"onclick="tinybar_down(this)"><a>營隊宗旨</a>
+					<ul id="down1" class="tinymenu_down">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html">最新資訊</a></li>
+				<li id="d2"onclick="tinybar_down(this)"><a>活動資訊</a>
+					<ul id="down2" class="tinymenu_down">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li id="d3"onclick="tinybar_down(this)"><a>營隊組織</a>
+					<ul id="down3" class="tinymenu_down">
+						<li><a href="../team/workteam.html">執行團隊</a></li>
+						<li><a href="../team/associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html">社團簡介</a></li>
+				<li id="d4"onclick="tinybar_down(this)"><a>精彩回顧</a>
+					<ul id="down4" class="tinymenu_down">
+						<li><a href="picture.html">回憶照片</a></li>
+						<li><a href="video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li id="d5"onclick="tinybar_down(this)"><a>交通資訊</a>
+					<ul id="down5" class="tinymenu_down">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/nnect.html">相關連結</a></li>
+				<li id="d6"onclick="tinybar_down(this)"><a>Ｑ＆Ａ</a>
+					<ul id="down6" class="tinymenu_down">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+	</nav>
+	
+	<div id="mynavbar" class="fixed" style="background-color:rgba(232,233,234,0.75);">
+		<nav>
+			<ul>
+				<li><a href="../home.html"><img src="../navbar/yuntech_logo.png" width="220px" height="67px"></a></li>
+				<li><a><img src="../navbar/01.png" width="50px" height="50px"><br>營隊宗旨</a>
+					<ul class="dropdown-menu">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html"><img src="../navbar/02.png" width="40px" height="50px"><br>最新資訊</a></li>
+				<li><a><img src="../navbar/03.png" width="55px" height="50px"><br>活動資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li><a><img src="../navbar/04.png" width="50px" height="50px"><br>營隊組織</a>
+					<ul class="dropdown-menu">
+						<li><a href="../team/workteam.html">執行團隊</a></li>
+						<li><a href="../team/associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html"><img src="../navbar/05.png" width="50px" height="50px"><br>社團簡介</a></li>
+				<li><a><img src="../navbar/06.png" width="50px" height="50px"><br>精彩回顧</a>
+					<ul class="dropdown-menu">
+						<li><a href="picture.html">回憶照片</a></li>
+						<li><a href="video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li><a><img src="../navbar/07.png" width="50px" height="50px"><br>交通資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html"><img src="../navbar/08.png" width="50px" height="50px"><br>相關連結</a></li>
+				<li><a><img src="../navbar/09.png" width="50px" height="50px"><br>Ｑ＆Ａ</a>
+					<ul class="dropdown-menu">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>	
+</header>
+
+	<div id="camra">
+		<div id="polaroid">
+			<img src="camra.png">
+			<div id="rightbtn" onclick="next()" onmousedown="btndown()"onmouseup="changebtn()"><img src="rightbutton.png">
+				<audio id="camrasound">
+				<source src="camrasound.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+			<div id="pic2"><img src="pic/IMG10.jpg"></div>
+			<div id="pic3"><img src=""></div>
+		</div>
+		<div id="pic1"><img src="pic/IMG1.jpg"></div>
+		
+	</div>
+	<!--<div id="fixing">
+		<img src="../fixing.png">
+	</div>-->
+</body>
+<footer>
+	
+</footer>
+</html>
+  

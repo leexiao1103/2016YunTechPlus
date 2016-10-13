@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="2016 YunTech+ Orientation Camp 新生學涯開展營">
+    <meta name="keywords" content="2016 yuntech+, 2016 開展營, 2016雲科開展營">
+    <meta name="author" content="LeeXiao">
+	
+	<link rel="icon" href="../bighead.png">
+
+	<title>2016 YunTech+ Orientation Camp 新生學涯開展營</title>
+	
+	<link href="../style.css" rel="stylesheet">
+	<link href="ass_style.css" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/activity.js"></script>	
+	<script src="../js/ass_pic.js"></script>
+	<!--櫻花飄-->
+	<link href="../leaf/leaf_style.css" rel="stylesheet">
+	<script src="../leaf/leaf_jquery.js" type="text/javascript"></script>
+	<!--------------------------------------------------->
+	<style type="text/css">
+		@media only screen and (max-width: 1130px) {
+			#leaf1{
+				display:none;
+			}
+			#leaf2{
+				display:none;
+			}
+			#leaf3{
+				display:none;
+			}
+			#leaf4{
+				display:none;
+			}
+			#leaf5{
+				display:none;
+			}
+			#leaf6{
+				display:none;
+			}
+			#leaf7{
+				display:none;
+			}
+			#leaf8{
+				display:none;
+			}
+			#leaf9{
+				display:none;
+			}
+			#leaf10{
+				display:none;
+			}
+			#leaf11{
+				display:none;
+			}
+			#leaf12{
+				display:none;
+			}
+			#leaf13{
+				display:none;
+			}
+			#leaf14{
+				display:none;
+			}
+			#leaf15{
+				display:none;
+			}
+			.fbicon{
+				display:none;
+			}
+			#treeleft{
+				display:none;
+			}
+			#treeright{
+				display:none;
+			}
+			#sloth{
+				display:none;
+			}
+		}
+	</style>
+</head>
+<body style="background:#EAE8E9;">
+<div id="window"></div>
+<a class="fbicon" href="https://www.facebook.com/2016YuntechPlus/" target="_blank"><img id="fb_icon"style="width:100%; height:auto;" src="../FB.png"></a>
+
+<header>
+	<div id="treeleft"><img id="leftpic" src="../tree_left.png"></div>
+	<div id="treeright"><img id="rightpic" src="../tree_right.png"></div>
+	<div id="sloth" onmouseover="slothcall()" onmouseout="slothout()">
+		<img src="../sloth.png">
+		<audio id="sound">
+			<source src="../slothcall.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<!--櫻花-->
+	<div id="leaf1"></div><div id="leaf2"></div><div id="leaf3"></div><div id="leaf4"></div><div id="leaf5"></div><div id="leaf6"></div><div id="leaf7"></div>
+	<div id="leaf8"></div><div id="leaf9"></div><div id="leaf10"></div><div id="leaf11"></div><div id="leaf12"></div><div id="leaf13"></div><div id="leaf14"></div><div id="leaf15"></div>
+
+	<nav id="bar">
+			<div id="tinybar" style="float:left;"><div id="menu-toggle" onclick="tinybar()">&#9776;</div><a href="../home.html"><img style="width: 140px; height: 40px;"src="../navbar/yuntech_logo_2.png" width="200px" height="75px"></a></div>
+			<ul class="tinymenu">
+				<li id="d1"onclick="tinybar_down(this)"><a>營隊宗旨</a>
+					<ul id="down1" class="tinymenu_down">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html">最新資訊</a></li>
+				<li id="d2"onclick="tinybar_down(this)"><a>活動資訊</a>
+					<ul id="down2" class="tinymenu_down">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li id="d3"onclick="tinybar_down(this)"><a>營隊組織</a>
+					<ul id="down3" class="tinymenu_down">
+						<li><a href="workteam.html">執行團隊</a></li>
+						<li><a href="associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html">社團簡介</a></li>
+				<li id="d4"onclick="tinybar_down(this)"><a>精彩回顧</a>
+					<ul id="down4" class="tinymenu_down">
+						<li><a href="../lastyear/picture.html">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li id="d5"onclick="tinybar_down(this)"><a>交通資訊</a>
+					<ul id="down5" class="tinymenu_down">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html">相關連結</a></li>
+				<li id="d6"onclick="tinybar_down(this)"><a>Ｑ＆Ａ</a>
+					<ul id="down6" class="tinymenu_down">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+	</nav>
+	
+	<div id="mynavbar" class="fixed" style="background-color:rgba(232,233,234,0.75);">
+		<nav>
+			<ul>
+				<li><a href="../home.html"><img src="../navbar/yuntech_logo.png" width="220px" height="67px"></a></li>
+				<li><a><img src="../navbar/01.png" width="50px" height="50px"><br>營隊宗旨</a>
+					<ul class="dropdown-menu">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html"><img src="../navbar/02.png" width="40px" height="50px"><br>最新資訊</a></li>
+				<li><a><img src="../navbar/03.png" width="55px" height="50px"><br>活動資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li><a><img src="../navbar/04.png" width="50px" height="50px"><br>營隊組織</a>
+					<ul class="dropdown-menu">
+						<li><a href="workteam.html">執行團隊</a></li>
+						<li><a href="associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="../group/group.html"><img src="../navbar/05.png" width="50px" height="50px"><br>社團簡介</a></li>
+				<li><a><img src="../navbar/06.png" width="50px" height="50px"><br>精彩回顧</a>
+					<ul class="dropdown-menu">
+						<li><a href="../lastyear/picture.html">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li><a><img src="../navbar/07.png" width="50px" height="50px"><br>交通資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html"><img src="../navbar/08.png" width="50px" height="50px"><br>相關連結</a></li>
+				<li><a><img src="../navbar/09.png" width="50px" height="50px"><br>Ｑ＆Ａ</a>
+					<ul class="dropdown-menu">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>	
+</header>
+	<div id="associations_container">
+		<div style="margin-bottom: 5px;overflow:hidden; white-space: nowrap; text-align: center;">
+			<ul class="associationstag">
+				<li><a>工程學院</a>
+					<ul>
+						<li><a id="0" onclick="AssShow(this)">機械工程系學會</a></li>
+						<li><a id="1" onclick="AssShow(this)">電機工程系學會</a></li>
+						<li><a id="2" onclick="AssShow(this)">電子工程系學會</a></li>
+						<li><a id="3" onclick="AssShow(this)">環境與安全衛生工程系學會</a></li>
+						<li><a id="4" onclick="AssShow(this)">化學工程與材料工程系學會</a></li>
+						<li><a id="5" onclick="AssShow(this)">營建工程系學會</a></li>
+						<li><a id="6" onclick="AssShow(this)">資訊工程系學會</a></li>
+						<li><a id="7" onclick="AssShow(this)">工程不分系學會</a></li>
+					</ul>
+				</li>
+				<li><a>管理學院</a>
+					<ul>
+						<li><a id="8" onclick="AssShow(this)">國際管理學士學位學程學會</a></li>
+						<li><a id="9" onclick="AssShow(this)">工業工程與管理系學會</a></li>
+						<li><a id="10" onclick="AssShow(this)">企業管理系學會</a></li>
+						<li><a id="11" onclick="AssShow(this)">資訊管理系學會</a></li>
+						<li><a id="12" onclick="AssShow(this)">財務金融系學會</a></li>
+						<li><a id="13" onclick="AssShow(this)">會計系學會</a></li>
+					</ul>
+				</li>
+				<li><a>設計學院</a>
+					<ul>
+						<li><a id="14" onclick="AssShow(this)">工業設計系學會</a></li>
+						<li><a id="15" onclick="AssShow(this)">建築與室內設計系學會</a></li>
+						<li><a id="16" onclick="AssShow(this)">視覺傳達設計系學會</a></li>
+						<li><a id="17" onclick="AssShow(this)">數位媒體設計系學會</a></li>
+						<li><a id="18" onclick="AssShow(this)">創意生活設計系學會</a></li>
+					</ul>
+				</li>
+				<li><a>人文與科學學院</a>
+					<ul>
+						<li><a id="19" onclick="AssShow(this)">文化資產維護系學會</a></li>
+						<li><a id="20" onclick="AssShow(this)">應用外語系學會</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="associationsteam">
+		
+			<div id="Ass_logo" style="position:absolute;width:100%;padding-top:100px;">
+				<img  src="img/OK.png" style="width:100%;height:auto;">
+			</div>
+			<div id="AAgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/AAA.jpg">
+				<img id="AA0" class="coinAss" src="img/AA.jpg">
+				<img id="AA1" class="coinAss" src="img/AA1.jpg" style="opacity:0">
+				<img id="AA2" class="coinAss" src="img/AA2.jpg" style="opacity:0">
+				<img id="AA3" class="coinAss" src="img/AA3.jpg" style="opacity:0">
+				<img id="AA4" class="coinAss" src="img/AA4.jpg" style="opacity:0">
+				<img id="AA5" class="coinAss" src="img/AA5.jpg" style="opacity:0">
+				<img id="AA6" class="coinAss" src="img/AA6.jpg" style="opacity:0">
+				<img id="AA7" class="coinAss" src="img/AA7.jpg" style="opacity:0">
+				<img id="AA8" class="coinAss" src="img/AA8.jpg" style="opacity:0">
+				<img id="AA9" class="coinAss" src="img/AA9.jpg" style="opacity:0">
+				<img id="AA10" class="coinAss" src="img/AA10.jpg" style="opacity:0">
+				<img id="AA11" class="coinAss" src="img/AA11.jpg" style="opacity:0">
+				<img id="AA12" class="coinAss" src="img/AA12.jpg" style="opacity:0">
+				<img id="AA13" class="coinAss" src="img/AA13.jpg" style="opacity:0">
+				<img id="AA14" class="coinAss" src="img/AA14.jpg" style="opacity:0">
+				<img id="AA15" class="coinAss" src="img/AA15.jpg" style="opacity:0">
+				<img id="AA16" class="coinAss" src="img/AA16.jpg" style="opacity:0">
+				<img id="AA17" class="coinAss" src="img/AA17.jpg" style="opacity:0">
+				<img id="coinAss1" class="smallcoinAss" onclick="switchAss(this)" src="img/AA1.jpg">
+				<img id="coinAss2" class="smallcoinAss" onclick="switchAss(this)" src="img/AA2.jpg">
+				<img id="coinAss3" class="smallcoinAss" onclick="switchAss(this)" src="img/AA3.jpg">
+				<img id="coinAss4" class="smallcoinAss" onclick="switchAss(this)" src="img/AA4.jpg">
+				<img id="coinAss5" class="smallcoinAss" onclick="switchAss(this)" src="img/AA5.jpg">
+				<img id="coinAss6" class="smallcoinAss" onclick="switchAss(this)" src="img/AA6.jpg">
+				<img id="coinAss7" class="smallcoinAss" onclick="switchAss(this)" src="img/AA7.jpg">
+				<img id="coinAss8" class="smallcoinAss" onclick="switchAss(this)" src="img/AA8.jpg">
+				<img id="coinAss9" class="smallcoinAss" onclick="switchAss(this)" src="img/AA9.jpg">
+				<img id="coinAss10" class="smallcoinAss" onclick="switchAss(this)" src="img/AA10.jpg">
+				<img id="coinAss11" class="smallcoinAss" onclick="switchAss(this)" src="img/AA11.jpg">
+				<img id="coinAss12" class="smallcoinAss" onclick="switchAss(this)" src="img/AA12.jpg">
+				<img id="coinAss13" class="smallcoinAss" onclick="switchAss(this)" src="img/AA13.jpg">
+				<img id="coinAss14" class="smallcoinAss" onclick="switchAss(this)" src="img/AA14.jpg">
+				<img id="coinAss15" class="smallcoinAss" onclick="switchAss(this)" src="img/AA15.jpg">
+				<img id="coinAss16" class="smallcoinAss" onclick="switchAss(this)" src="img/AA16.jpg">
+				<img id="coinAss17" class="smallcoinAss" onclick="switchAss(this)" src="img/AA17.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >機械工程系學會</div>
+					<div class="pictext1Ass">YO我們是機械系學會，歡迎你們加入雲科大新鮮人的行列，大學四年就像一張畫布，盡情的在上面塗上色彩，努力讓你們大學四年青春不留白吧!!!!</div>
+				</div>
+				<div id="text1" class="pictext2Ass"></div>
+			</div>
+			<div id="BBgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/BBB.jpg">
+				<img id="BB0" class="coinAss" src="img/BB.jpg">
+				<img id="BB1" class="coinAss" src="img/BB1.jpg" style="opacity:0">
+				<img id="BB2" class="coinAss" src="img/BB2.jpg" style="opacity:0">
+				<img id="BB3" class="coinAss" src="img/BB3.jpg" style="opacity:0">
+				<img id="BB4" class="coinAss" src="img/BB4.jpg" style="opacity:0">
+				<img id="BB5" class="coinAss" src="img/BB5.jpg" style="opacity:0">
+				<img id="BB6" class="coinAss" src="img/BB6.jpg" style="opacity:0">
+				<img id="BB7" class="coinAss" src="img/BB7.jpg" style="opacity:0">
+				<img id="BB8" class="coinAss" src="img/BB8.jpg" style="opacity:0">
+				<img id="BB9" class="coinAss" src="img/BB9.jpg" style="opacity:0">
+				<img id="BB10" class="coinAss" src="img/BB10.jpg" style="opacity:0">
+				<img id="BB11" class="coinAss" src="img/BB11.jpg" style="opacity:0">
+				<img id="BB12" class="coinAss" src="img/BB12.jpg" style="opacity:0">
+				<img id="coinAss18" class="smallcoinAss" onclick="switchAss(this)" src="img/BB1.jpg">
+				<img id="coinAss19" class="smallcoinAss" onclick="switchAss(this)" src="img/BB2.jpg">
+				<img id="coinAss20" class="smallcoinAss" onclick="switchAss(this)" src="img/BB3.jpg">
+				<img id="coinAss21" class="smallcoinAss" onclick="switchAss(this)" src="img/BB4.jpg">
+				<img id="coinAss22" class="smallcoinAss" onclick="switchAss(this)" src="img/BB5.jpg">
+				<img id="coinAss23" class="smallcoinAss" onclick="switchAss(this)" src="img/BB6.jpg">
+				<img id="coinAss24" class="smallcoinAss" onclick="switchAss(this)" src="img/BB7.jpg">
+				<img id="coinAss25" class="smallcoinAss" onclick="switchAss(this)" src="img/BB8.jpg">
+				<img id="coinAss26" class="smallcoinAss" onclick="switchAss(this)" src="img/BB9.jpg">
+				<img id="coinAss27" class="smallcoinAss" onclick="switchAss(this)" src="img/BB10.jpg">
+				<img id="coinAss28" class="smallcoinAss" onclick="switchAss(this)" src="img/BB11.jpg">
+				<img id="coinAss29" class="smallcoinAss" onclick="switchAss(this)" src="img/BB12.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >電機工程系學會</div>
+					<div class="pictext1Ass">Hi~各位雲科大的新鮮人們，恭喜你們進入雲科大。未來在學校有神麼問題盡量問學長姐就對了!!學長學姐們都是很熱情很有活力的喔~~相信你們在這幾天也能成為有活力有power的新鮮人喔!!</div>
+				</div>
+				<div id="text2" class="pictext2Ass"></div>
+			</div>		
+			<div id="CCgroup" style="display:none">
+					<div class="coinAss"></div>
+					<img class="coinAss" src="img/CCC.jpg">
+					<img id="CC0" class="coinAss" src="img/CC.jpg">
+					<img id="CC1" class="coinAss" src="img/CC1.jpg" style="opacity:0">
+					<img id="CC2" class="coinAss" src="img/CC2.jpg" style="opacity:0">
+					<img id="CC3" class="coinAss" src="img/CC3.jpg" style="opacity:0">
+					<img id="CC4" class="coinAss" src="img/CC4.jpg" style="opacity:0">
+					<img id="CC5" class="coinAss" src="img/CC5.jpg" style="opacity:0">
+					<img id="CC6" class="coinAss" src="img/CC6.jpg" style="opacity:0">
+					<img id="CC7" class="coinAss" src="img/CC7.jpg" style="opacity:0">
+					<img id="CC8" class="coinAss" src="img/CC8.jpg" style="opacity:0">
+					<img id="CC9" class="coinAss" src="img/CC9.jpg" style="opacity:0">
+					<img id="CC10" class="coinAss" src="img/CC10.jpg" style="opacity:0">
+					<img id="CC11" class="coinAss" src="img/CC11.jpg" style="opacity:0">
+					<img id="CC12" class="coinAss" src="img/CC12.jpg" style="opacity:0">				
+					<img id="CC13" class="coinAss" src="img/CC13.jpg" style="opacity:0">
+					<img id="coinAss30" class="smallcoinAss" onclick="switchAss(this)" src="img/CC1.jpg">
+					<img id="coinAss31" class="smallcoinAss" onclick="switchAss(this)" src="img/CC2.jpg">
+					<img id="coinAss32" class="smallcoinAss" onclick="switchAss(this)" src="img/CC3.jpg">
+					<img id="coinAss33" class="smallcoinAss" onclick="switchAss(this)" src="img/CC4.jpg">
+					<img id="coinAss34" class="smallcoinAss" onclick="switchAss(this)" src="img/CC5.jpg">
+					<img id="coinAss35" class="smallcoinAss" onclick="switchAss(this)" src="img/CC6.jpg">
+					<img id="coinAss36" class="smallcoinAss" onclick="switchAss(this)" src="img/CC7.jpg">
+					<img id="coinAss37" class="smallcoinAss" onclick="switchAss(this)" src="img/CC8.jpg">
+					<img id="coinAss38" class="smallcoinAss" onclick="switchAss(this)" src="img/CC9.jpg">
+					<img id="coinAss39" class="smallcoinAss" onclick="switchAss(this)" src="img/CC10.jpg">
+					<img id="coinAss40" class="smallcoinAss" onclick="switchAss(this)" src="img/CC11.jpg">
+					<img id="coinAss41" class="smallcoinAss" onclick="switchAss(this)" src="img/CC12.jpg">				
+					<img id="coinAss42" class="smallcoinAss" onclick="switchAss(this)" src="img/CC13.jpg">
+					<div class="TextAss">
+						<div id="nameA" class="nameAss" >電子工程系學會</div>
+						<div class="pictext1Ass">加入雲科電子系大家庭，是你一輩子的光榮，這四年就好好享受不一樣的人生。</div>
+					</div>
+					<div id="text3" class="pictext2Ass"></div>
+			</div>
+			<div id="DDgroup" style="display:none">
+					<div class="coinAss" style="bottom:10%;"></div>
+					<img class="coinAss" style="bottom:10%;" src="img/DDD.jpg">
+					<img id="DD0" class="coinAss" style="bottom:10%;" src="img/DD.jpg">
+					<img id="DD1" class="coinAss" src="img/DD1.jpg" style="bottom:10%;opacity:0">
+					<img id="DD2" class="coinAss" src="img/DD2.jpg" style="bottom:10%;opacity:0">
+					<img id="DD3" class="coinAss" src="img/DD3.jpg" style="bottom:10%;opacity:0">
+					<img id="DD4" class="coinAss" src="img/DD4.jpg" style="bottom:10%;opacity:0">
+					<img id="DD5" class="coinAss" src="img/DD5.jpg" style="bottom:10%;opacity:0">
+					<img id="DD6" class="coinAss" src="img/DD6.jpg" style="bottom:10%;opacity:0">
+					<img id="DD7" class="coinAss" src="img/DD7.jpg" style="bottom:10%;opacity:0">
+					<img id="DD8" class="coinAss" src="img/DD8.jpg" style="bottom:10%;opacity:0">
+					<img id="DD9" class="coinAss" src="img/DD9.jpg" style="bottom:10%;opacity:0">
+					<img id="DD10" class="coinAss" src="img/DD10.jpg" style="bottom:10%;opacity:0">
+					<img id="DD11" class="coinAss"  src="img/DD11.jpg" style="bottom:10%;opacity:0">
+					<img id="DD12" class="coinAss" src="img/DD12.jpg" style="bottom:10%;opacity:0">
+					<img id="coinAss43" class="smallcoinAss" onclick="switchAss(this)" src="img/DD1.jpg">
+					<img id="coinAss44" class="smallcoinAss" onclick="switchAss(this)" src="img/DD2.jpg">
+					<img id="coinAss45" class="smallcoinAss" onclick="switchAss(this)" src="img/DD3.jpg">
+					<img id="coinAss46" class="smallcoinAss" onclick="switchAss(this)" src="img/DD4.jpg">
+					<img id="coinAss47" class="smallcoinAss" onclick="switchAss(this)" src="img/DD5.jpg">
+					<img id="coinAss48" class="smallcoinAss" onclick="switchAss(this)" src="img/DD6.jpg">
+					<img id="coinAss49" class="smallcoinAss" onclick="switchAss(this)" src="img/DD7.jpg">
+					<img id="coinAss50" class="smallcoinAss" onclick="switchAss(this)" src="img/DD8.jpg">
+					<img id="coinAss51" class="smallcoinAss" onclick="switchAss(this)" src="img/DD9.jpg">
+					<img id="coinAss52" class="smallcoinAss" onclick="switchAss(this)" src="img/DD10.jpg">
+					<img id="coinAss53" class="smallcoinAss" onclick="switchAss(this)" src="img/DD11.jpg">
+					<img id="coinAss54" class="smallcoinAss" onclick="switchAss(this)" src="img/DD12.jpg">
+					<div class="TextAss">
+						<div id="nameA" class="nameAss" >環境與安全衛生系學會</div>
+						<div class="pictext1Ass">各位學弟妹你們好，首先恭喜你們成為雲科大的一份子，也歡迎你們成為環安系大家庭的一員。在這個嶄新的階段裡，祝福你們不論在社團、課業、家庭等方面，都能如魚得水、得到歸屬感，在熱心的學長姊們的帶領下，與同學們一起加油吧！</div>
+					</div>
+					<div id="text4" class="pictext2Ass"></div>
+			</div>
+			<div id="EEgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/EEE.jpg">
+				<img id="EE0" class="coinAss" src="img/EE.jpg">
+				<img id="EE1" class="coinAss" src="img/EE1.jpg" style="opacity:0">
+				<img id="EE2" class="coinAss" src="img/EE2.jpg" style="opacity:0">
+				<img id="EE3" class="coinAss" src="img/EE3.jpg" style="opacity:0">
+				<img id="EE4" class="coinAss" src="img/EE4.jpg" style="opacity:0">
+				<img id="EE5" class="coinAss" src="img/EE5.jpg" style="opacity:0">
+				<img id="EE6" class="coinAss" src="img/EE6.jpg" style="opacity:0">
+				<img id="EE7" class="coinAss" src="img/EE7.jpg" style="opacity:0">
+				<img id="EE8" class="coinAss" src="img/EE8.jpg" style="opacity:0">
+				<img id="EE9" class="coinAss" src="img/EE9.jpg" style="opacity:0">
+				<img id="EE10" class="coinAss" src="img/EE10.jpg" style="opacity:0">
+				<img id="EE11" class="coinAss" src="img/EE11.jpg" style="opacity:0">
+				<img id="EE12" class="coinAss" src="img/EE12.jpg" style="opacity:0">
+				<img id="EE13" class="coinAss" src="img/EE13.jpg" style="opacity:0">
+				<img id="EE14" class="coinAss" src="img/EE14.jpg" style="opacity:0">
+				<img id="EE15" class="coinAss" src="img/EE15.jpg" style="opacity:0">
+				<img id="EE16" class="coinAss" src="img/EE16.jpg" style="opacity:0">
+				<img id="EE17" class="coinAss" src="img/EE17.jpg" style="opacity:0">
+				<img id="EE18" class="coinAss" src="img/EE18.jpg" style="opacity:0">
+				<img id="EE19" class="coinAss" src="img/EE19.jpg" style="opacity:0">
+				<img id="EE20" class="coinAss" src="img/EE20.jpg" style="opacity:0">
+				<img id="coinAss55" class="smallcoinAss" onclick="switchAss(this)" src="img/EE1.jpg">
+				<img id="coinAss56" class="smallcoinAss" onclick="switchAss(this)" src="img/EE2.jpg">
+				<img id="coinAss57" class="smallcoinAss" onclick="switchAss(this)" src="img/EE3.jpg">
+				<img id="coinAss58" class="smallcoinAss" onclick="switchAss(this)" src="img/EE4.jpg">
+				<img id="coinAss59" class="smallcoinAss" onclick="switchAss(this)" src="img/EE5.jpg">
+				<img id="coinAss60" class="smallcoinAss" onclick="switchAss(this)" src="img/EE6.jpg">
+				<img id="coinAss61" class="smallcoinAss" onclick="switchAss(this)" src="img/EE7.jpg">
+				<img id="coinAss62" class="smallcoinAss" onclick="switchAss(this)" src="img/EE8.jpg">
+				<img id="coinAss63" class="smallcoinAss" onclick="switchAss(this)" src="img/EE9.jpg">
+				<img id="coinAss64" class="smallcoinAss" onclick="switchAss(this)" src="img/EE10.jpg">
+				<img id="coinAss65" class="smallcoinAss" onclick="switchAss(this)" src="img/EE11.jpg">
+				<img id="coinAss66" class="smallcoinAss" onclick="switchAss(this)" src="img/EE12.jpg">
+				<img id="coinAss67" class="smallcoinAss" onclick="switchAss(this)" src="img/EE13.jpg">
+				<img id="coinAss68" class="smallcoinAss" onclick="switchAss(this)" src="img/EE14.jpg">
+				<img id="coinAss69" class="smallcoinAss" onclick="switchAss(this)" src="img/EE15.jpg">
+				<img id="coinAss70" class="smallcoinAss" onclick="switchAss(this)" src="img/EE16.jpg">
+				<img id="coinAss71" class="smallcoinAss" onclick="switchAss(this)" src="img/EE17.jpg">
+				<img id="coinAss72" class="smallcoinAss" onclick="switchAss(this)" src="img/EE18.jpg">
+				<img id="coinAss73" class="smallcoinAss" onclick="switchAss(this)" src="img/EE19.jpg">
+				<img id="coinAss74" class="smallcoinAss" onclick="switchAss(this)" src="img/EE20.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >化學工程與材料工程系學會</div>
+					<div class="pictext1Ass">歡迎~你們加入雲科這個大家庭，開展營三天就盡情放聲的玩吧!好好享受大學生活，當個會讀書也會玩的人，最後社團誠可貴，系會價更高，若為成績故，兩者皆可拋。</div>
+				</div>
+				<div id="text5" class="pictext2Ass"></div>
+			</div>
+			<div id="FFgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/FFF.jpg">
+				<img id="FF0" class="coinAss" src="img/FF.jpg">
+				<img id="FF1" class="coinAss" src="img/FF1.jpg" style="opacity:0">
+				<img id="FF2" class="coinAss" src="img/FF2.jpg" style="opacity:0">
+				<img id="FF3" class="coinAss" src="img/FF3.jpg" style="opacity:0">
+				<img id="FF4" class="coinAss" src="img/FF4.jpg" style="opacity:0">
+				<img id="FF5" class="coinAss" src="img/FF5.jpg" style="opacity:0">
+				<img id="FF6" class="coinAss" src="img/FF6.jpg" style="opacity:0">
+				<img id="FF7" class="coinAss" src="img/FF7.jpg" style="opacity:0">
+				<img id="FF8" class="coinAss" src="img/FF8.jpg" style="opacity:0">
+				<img id="FF9" class="coinAss" src="img/FF9.jpg" style="opacity:0">
+				<img id="FF10" class="coinAss" src="img/FF10.jpg" style="opacity:0">
+				<img id="FF11" class="coinAss" src="img/FF11.jpg" style="opacity:0">
+				<img id="FF12" class="coinAss" src="img/FF12.jpg" style="opacity:0">
+				<img id="coinAss75" class="smallcoinAss" onclick="switchAss(this)" src="img/FF1.jpg">
+				<img id="coinAss76" class="smallcoinAss" onclick="switchAss(this)" src="img/FF2.jpg">
+				<img id="coinAss77" class="smallcoinAss" onclick="switchAss(this)" src="img/FF3.jpg">
+				<img id="coinAss78" class="smallcoinAss" onclick="switchAss(this)" src="img/FF4.jpg">
+				<img id="coinAss79" class="smallcoinAss" onclick="switchAss(this)" src="img/FF5.jpg">
+				<img id="coinAss80" class="smallcoinAss" onclick="switchAss(this)" src="img/FF6.jpg">
+				<img id="coinAss81" class="smallcoinAss" onclick="switchAss(this)" src="img/FF7.jpg">
+				<img id="coinAss82" class="smallcoinAss" onclick="switchAss(this)" src="img/FF8.jpg">
+				<img id="coinAss83" class="smallcoinAss" onclick="switchAss(this)" src="img/FF9.jpg">
+				<img id="coinAss84" class="smallcoinAss" onclick="switchAss(this)" src="img/FF10.jpg">
+				<img id="coinAss85" class="smallcoinAss" onclick="switchAss(this)" src="img/FF11.jpg">
+				<img id="coinAss86" class="smallcoinAss" onclick="switchAss(this)" src="img/FF12.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >營建工程系學會</div>
+					<div class="pictext1Ass">哈囉，各位可愛的雲科新生們，希望你們在大學生活中，能找到自己的方向，修滿所謂的四學分─課業、打工、愛情及社團，祝福你們！</div>
+				</div>
+				<div id="text6" class="pictext2Ass"></div>
+			</div>
+			<div id="GGgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/GGG.jpg">
+				<img id="GG0" class="coinAss" src="img/GG.jpg">
+				<img id="GG1" class="coinAss" src="why1.jpg" style="opacity:0">
+				<img id="GG2" class="coinAss" src="why2.jpg" style="opacity:0">
+				<img id="GG3" class="coinAss" src="why3.jpg" style="opacity:0">
+				<img id="GG4" class="coinAss" src="why4.jpg" style="opacity:0">
+				<img id="GG5" class="coinAss" src="why5.jpg" style="opacity:0">
+				<img id="GG6" class="coinAss" src="why6.jpg" style="opacity:0">
+				<img id="GG7" class="coinAss" src="img/GG7.jpg" style="opacity:0">
+				<img id="GG8" class="coinAss" src="img/GG8.jpg" style="opacity:0">
+				<img id="coinAss87" class="smallcoinAss" onclick="switchAss(this)" src="why1.jpg">
+				<img id="coinAss88" class="smallcoinAss" onclick="switchAss(this)" src="why2.jpg">
+				<img id="coinAss89" class="smallcoinAss" onclick="switchAss(this)" src="why3.jpg">
+				<img id="coinAss90" class="smallcoinAss" onclick="switchAss(this)" src="why4.jpg">
+				<img id="coinAss91" class="smallcoinAss" onclick="switchAss(this)" src="why5.jpg">
+				<img id="coinAss92" class="smallcoinAss" onclick="switchAss(this)" src="why6.jpg">
+				<img id="coinAss93" class="smallcoinAss" onclick="switchAss(this)" src="img/GG7.jpg">
+				<img id="coinAss94" class="smallcoinAss" onclick="switchAss(this)" src="img/GG8.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >資訊工程系學會</div>
+					<div class="pictext1Ass">資工系的新生們\n";cout<<"歡迎加入資工系這個大家庭\n";cout<<"微積分太難？工數看不懂？\n";cout<<"不怕！有學長罩！\n";}</div>
+				</div>
+				<div id="text7" class="pictext2Ass"></div>
+			</div>
+			<div id="HHgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/HHH.jpg">
+				<img id="HH0" class="coinAss" src="img/HH.jpg">
+				<img id="HH1" class="coinAss" src="img/HH1.jpg" style="opacity:0">
+				<img id="HH2" class="coinAss" src="img/HH2.jpg" style="opacity:0">
+				<img id="HH3" class="coinAss" src="img/HH3.jpg" style="opacity:0">
+				<img id="HH4" class="coinAss" src="img/HH4.jpg" style="opacity:0">
+				<img id="HH5" class="coinAss" src="img/HH5.jpg" style="opacity:0">
+				<img id="HH6" class="coinAss" src="img/HH6.jpg" style="opacity:0">
+				<img id="HH7" class="coinAss" src="img/HH7.jpg" style="opacity:0">
+				<img id="HH8" class="coinAss" src="img/HH8.jpg" style="opacity:0">				
+				<img id="HH9" class="coinAss" src="img/HH9.jpg" style="opacity:0">
+				<img id="HH10" class="coinAss" src="img/HH10.jpg" style="opacity:0">
+				<img id="HH11" class="coinAss" src="img/HH11.jpg" style="opacity:0">
+				<img id="HH12" class="coinAss" src="img/HH12.jpg" style="opacity:0">
+				<img id="HH13" class="coinAss" src="img/HH13.jpg" style="opacity:0">
+				<img id="HH14" class="coinAss" src="img/HH14.jpg" style="opacity:0">
+				<img id="HH15" class="coinAss" src="img/HH15.jpg" style="opacity:0">
+				<img id="HH16" class="coinAss" src="img/HH16.jpg" style="opacity:0">
+				<img id="coinAss95" class="smallcoinAss" onclick="switchAss(this)" src="img/HH1.jpg">
+				<img id="coinAss96" class="smallcoinAss" onclick="switchAss(this)" src="img/HH2.jpg">
+				<img id="coinAss97" class="smallcoinAss" onclick="switchAss(this)" src="img/HH3.jpg">
+				<img id="coinAss98" class="smallcoinAss" onclick="switchAss(this)" src="img/HH4.jpg">
+				<img id="coinAss99" class="smallcoinAss" onclick="switchAss(this)" src="img/HH5.jpg">
+				<img id="coinAss100" class="smallcoinAss" onclick="switchAss(this)" src="img/HH6.jpg">
+				<img id="coinAss101" class="smallcoinAss" onclick="switchAss(this)" src="img/HH7.jpg">
+				<img id="coinAss102" class="smallcoinAss" onclick="switchAss(this)" src="img/HH8.jpg">
+				<img id="coinAss103" class="smallcoinAss" onclick="switchAss(this)" src="img/HH9.jpg">
+				<img id="coinAss104" class="smallcoinAss" onclick="switchAss(this)" src="img/HH10.jpg">
+				<img id="coinAss105" class="smallcoinAss" onclick="switchAss(this)" src="img/HH11.jpg">
+				<img id="coinAss106" class="smallcoinAss" onclick="switchAss(this)" src="img/HH12.jpg">
+				<img id="coinAss107" class="smallcoinAss" onclick="switchAss(this)" src="img/HH13.jpg">
+				<img id="coinAss108" class="smallcoinAss" onclick="switchAss(this)" src="img/HH14.jpg">
+				<img id="coinAss109" class="smallcoinAss" onclick="switchAss(this)" src="img/HH15.jpg">
+				<img id="coinAss110" class="smallcoinAss" onclick="switchAss(this)" src="img/HH16.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >工程不分系學會</div>
+					<div class="pictext1Ass">各位學弟妹們大家好，歡迎來到雲科工程不分系大家庭，相信你們來到雲科一定能找到自己所屬的方向以及初衷。永遠謹記：「一日不分系，終身不分系。」</div>
+				</div>
+				<div id="text8" class="pictext2Ass"></div>
+			</div>
+			<div id="IIgroup"style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/III.jpg">
+				<img id="II0" class="coinAss" src="img/II.jpg">
+				<img id="II1" class="coinAss" src="img/II1.jpg" style="opacity:0">
+				<img id="II2" class="coinAss" src="img/II2.jpg" style="opacity:0">
+				<img id="II3" class="coinAss" src="img/II3.jpg" style="opacity:0">
+				<img id="II4" class="coinAss" src="img/II4.jpg" style="opacity:0">
+				<img id="II5" class="coinAss" src="img/II5.jpg" style="opacity:0">
+				<img id="II6" class="coinAss" src="img/II6.jpg" style="opacity:0">
+				<img id="II7" class="coinAss" src="img/II7.jpg" style="opacity:0">
+				<img id="II8" class="coinAss" src="img/II8.jpg" style="opacity:0">
+				<img id="coinAss111" class="smallcoinAss" onclick="switchAss(this)" src="img/II1.jpg">
+				<img id="coinAss112" class="smallcoinAss" onclick="switchAss(this)" src="img/II2.jpg">
+				<img id="coinAss113" class="smallcoinAss" onclick="switchAss(this)" src="img/II3.jpg">
+				<img id="coinAss114" class="smallcoinAss" onclick="switchAss(this)" src="img/II4.jpg">
+				<img id="coinAss115" class="smallcoinAss" onclick="switchAss(this)" src="img/II5.jpg">
+				<img id="coinAss116" class="smallcoinAss" onclick="switchAss(this)" src="img/II6.jpg">
+				<img id="coinAss117" class="smallcoinAss" onclick="switchAss(this)" src="img/II7.jpg">
+				<img id="coinAss118" class="smallcoinAss" onclick="switchAss(this)" src="img/II8.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >國際管理學士學位學程學會</div>
+					<div class="pictext1Ass">歡迎加入國管大家庭，雖然我們是小小系，但感情比別人好喔~大學多嘗試不同的事，不要怕挑戰，好好吃、好好玩、好好學。羨慕別人成功，不如起身進攻!為自己在四年留下人生精彩的一頁!</div>
+				</div>
+				<div id="text9" class="pictext2Ass"></div>
+			</div>
+			<div id="JJgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/JJJ.jpg">
+				<img id="JJ0" class="coinAss" src="img/JJ.jpg">
+				<img id="JJ1" class="coinAss" src="img/JJ1.jpg" style="opacity:0">
+				<img id="JJ2" class="coinAss" src="img/JJ2.jpg" style="opacity:0">
+				<img id="JJ3" class="coinAss" src="img/JJ3.jpg" style="opacity:0">
+				<img id="JJ4" class="coinAss" src="img/JJ4.jpg" style="opacity:0">
+				<img id="JJ5" class="coinAss" src="img/JJ5.jpg" style="opacity:0">
+				<img id="JJ6" class="coinAss" src="img/JJ6.jpg" style="opacity:0">
+				<img id="JJ7" class="coinAss" src="img/JJ7.jpg" style="opacity:0">
+				<img id="JJ8" class="coinAss" src="img/JJ8.jpg" style="opacity:0">
+				<img id="JJ9" class="coinAss" src="img/JJ9.jpg" style="opacity:0">
+				<img id="JJ10" class="coinAss" src="img/JJ10.jpg" style="opacity:0">
+				<img id="JJ11" class="coinAss" src="img/JJ11.jpg" style="opacity:0">
+				<img id="JJ12" class="coinAss" src="img/JJ12.jpg" style="opacity:0">
+				<img id="JJ13" class="coinAss" src="img/JJ13.jpg" style="opacity:0">
+				<img id="JJ14" class="coinAss" src="img/JJ14.jpg" style="opacity:0">
+				<img id="JJ15" class="coinAss" src="img/JJ15.jpg" style="opacity:0">
+				<img id="JJ16" class="coinAss" src="img/JJ16.jpg" style="opacity:0">
+				<img id="JJ17" class="coinAss" src="img/JJ17.jpg" style="opacity:0">
+				<img id="JJ18" class="coinAss" src="img/JJ18.jpg" style="opacity:0">
+				<img id="JJ19" class="coinAss" src="img/JJ19.jpg" style="opacity:0">
+				<img id="JJ20" class="coinAss" src="img/JJ20.jpg" style="opacity:0">
+				<img id="coinAss119" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ1.jpg">
+				<img id="coinAss120" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ2.jpg">
+				<img id="coinAss121" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ3.jpg">
+				<img id="coinAss122" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ4.jpg">
+				<img id="coinAss123" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ5.jpg">
+				<img id="coinAss124" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ6.jpg">
+				<img id="coinAss125" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ7.jpg">
+				<img id="coinAss126" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ8.jpg">
+				<img id="coinAss127" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ9.jpg">
+				<img id="coinAss128" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ10.jpg">
+				<img id="coinAss129" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ11.jpg">
+				<img id="coinAss130" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ12.jpg">
+				<img id="coinAss131" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ13.jpg">
+				<img id="coinAss132" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ14.jpg">
+				<img id="coinAss133" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ15.jpg">
+				<img id="coinAss134" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ16.jpg">
+				<img id="coinAss135" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ17.jpg">
+				<img id="coinAss136" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ18.jpg">
+				<img id="coinAss137" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ19.jpg">
+				<img id="coinAss138" class="smallcoinAss" onclick="switchAss(this)" src="img/JJ20.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >工業工程與管理系學會</div>
+					<div class="pictext1Ass">夢想建築在每天的快樂之上。保持正向樂觀的態度，邁向大學生活的每一天！</div>
+				</div>
+				<div id="text10" class="pictext2Ass"></div>
+			</div>
+			<div id="KKgroup"style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/KKK.jpg">
+				<img id="KK0" class="coinAss" src="img/KK.jpg">
+				<img id="KK1" class="coinAss" src="img/KK1.jpg" style="opacity:0">
+				<img id="KK2" class="coinAss" src="img/KK2.jpg" style="opacity:0">
+				<img id="KK3" class="coinAss" src="img/KK3.jpg" style="opacity:0">
+				<img id="KK4" class="coinAss" src="img/KK4.jpg" style="opacity:0">
+				<img id="KK5" class="coinAss" src="img/KK5.jpg" style="opacity:0">
+				<img id="KK6" class="coinAss" src="img/KK6.jpg" style="opacity:0">
+				<img id="KK7" class="coinAss" src="img/KK7.jpg" style="opacity:0">
+				<img id="KK8" class="coinAss" src="img/KK8.jpg" style="opacity:0">
+				<img id="KK9" class="coinAss" src="img/KK9.jpg" style="opacity:0">
+				<img id="KK10" class="coinAss" src="img/KK10.jpg" style="opacity:0">
+				<img id="KK11" class="coinAss" src="img/KK11.jpg" style="opacity:0">
+				<img id="KK12" class="coinAss" src="img/KK12.jpg" style="opacity:0">
+				<img id="coinAss139" class="smallcoinAss" onclick="switchAss(this)" src="img/KK1.jpg">
+				<img id="coinAss140" class="smallcoinAss" onclick="switchAss(this)" src="img/KK2.jpg">
+				<img id="coinAss141" class="smallcoinAss" onclick="switchAss(this)" src="img/KK3.jpg">
+				<img id="coinAss142" class="smallcoinAss" onclick="switchAss(this)" src="img/KK4.jpg">
+				<img id="coinAss143" class="smallcoinAss" onclick="switchAss(this)" src="img/KK5.jpg">
+				<img id="coinAss144" class="smallcoinAss" onclick="switchAss(this)" src="img/KK6.jpg">
+				<img id="coinAss145" class="smallcoinAss" onclick="switchAss(this)" src="img/KK7.jpg">
+				<img id="coinAss146" class="smallcoinAss" onclick="switchAss(this)" src="img/KK8.jpg">
+				<img id="coinAss147" class="smallcoinAss" onclick="switchAss(this)" src="img/KK9.jpg">
+				<img id="coinAss148" class="smallcoinAss" onclick="switchAss(this)" src="img/KK10.jpg">
+				<img id="coinAss149" class="smallcoinAss" onclick="switchAss(this)" src="img/KK11.jpg">
+				<img id="coinAss150" class="smallcoinAss" onclick="switchAss(this)" src="img/KK12.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >企業管理系學會</div>
+					<div class="pictext1Ass">自己選擇的路，跪著也要把它走完，親愛的大一新生們，或許你們對未來四年有所迷茫，但請相信一定可以過個精彩的大學生活，去揮灑自己的青春吧～企管系學會關心你。</div>
+				</div>
+				<div id="text11" class="pictext2Ass"></div>
+			</div>
+			<div id="LLgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/LLL.jpg">
+				<img id="LL0" class="coinAss" src="img/LL.jpg">
+				<img id="LL1" class="coinAss" src="img/LL1.jpg" style="opacity:0">
+				<img id="LL2" class="coinAss" src="img/LL2.jpg" style="opacity:0">
+				<img id="LL3" class="coinAss" src="img/LL3.jpg" style="opacity:0">
+				<img id="LL4" class="coinAss" src="img/LL4.jpg" style="opacity:0">
+				<img id="LL5" class="coinAss" src="img/LL5.jpg" style="opacity:0">
+				<img id="LL6" class="coinAss" src="img/LL6.jpg" style="opacity:0">
+				<img id="LL7" class="coinAss" src="img/LL7.jpg" style="opacity:0">
+				<img id="LL8" class="coinAss" src="img/LL8.jpg" style="opacity:0">
+				<img id="LL9" class="coinAss" src="img/LL9.jpg" style="opacity:0">
+				<img id="LL10" class="coinAss" src="img/LL10.jpg" style="opacity:0">
+				<img id="LL11" class="coinAss" src="img/LL11.jpg" style="opacity:0">
+				<img id="LL12" class="coinAss" src="img/LL12.jpg" style="opacity:0">
+				<img id="coinAss151" class="smallcoinAss" onclick="switchAss(this)" src="img/LL1.jpg">
+				<img id="coinAss152" class="smallcoinAss" onclick="switchAss(this)" src="img/LL2.jpg">
+				<img id="coinAss153" class="smallcoinAss" onclick="switchAss(this)" src="img/LL3.jpg">
+				<img id="coinAss154" class="smallcoinAss" onclick="switchAss(this)" src="img/LL4.jpg">
+				<img id="coinAss155" class="smallcoinAss" onclick="switchAss(this)" src="img/LL5.jpg">
+				<img id="coinAss156" class="smallcoinAss" onclick="switchAss(this)" src="img/LL6.jpg">
+				<img id="coinAss157" class="smallcoinAss" onclick="switchAss(this)" src="img/LL7.jpg">
+				<img id="coinAss158" class="smallcoinAss" onclick="switchAss(this)" src="img/LL8.jpg">
+				<img id="coinAss159" class="smallcoinAss" onclick="switchAss(this)" src="img/LL9.jpg">
+				<img id="coinAss160" class="smallcoinAss" onclick="switchAss(this)" src="img/LL10.jpg">
+				<img id="coinAss161" class="smallcoinAss" onclick="switchAss(this)" src="img/LL11.jpg">
+				<img id="coinAss162" class="smallcoinAss" onclick="switchAss(this)" src="img/LL12.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >資訊管理系學會</div>
+					<div class="pictext1Ass">Do Re Mi Sol～歡迎各位新生來到雲科大資管系，多采多姿的生活即將展開，大學四學分正等著你們去修習，希望在這四年中你們都能完美歐趴哦～～～～～～</div>
+				</div>
+				<div id="text12" class="pictext2Ass"></div>
+			</div>
+			<div id="MMgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/MMM.jpg">
+				<img id="MM0" class="coinAss" src="img/MM.jpg">
+				<img id="MM1" class="coinAss" src="img/MM1.jpg" style="opacity:0">
+				<img id="MM2" class="coinAss" src="img/MM2.jpg" style="opacity:0">
+				<img id="MM3" class="coinAss" src="img/MM3.jpg" style="opacity:0">
+				<img id="MM4" class="coinAss" src="img/MM4.jpg" style="opacity:0">
+				<img id="MM5" class="coinAss" src="img/MM5.jpg" style="opacity:0">
+				<img id="MM6" class="coinAss" src="img/MM6.jpg" style="opacity:0">
+				<img id="MM7" class="coinAss" src="img/MM7.jpg" style="opacity:0">
+				<img id="MM8" class="coinAss" src="img/MM8.jpg" style="opacity:0">
+				<img id="MM9" class="coinAss" src="img/MM9.jpg" style="opacity:0">
+				<img id="MM10" class="coinAss" src="img/MM10.jpg" style="opacity:0">
+				<img id="MM11" class="coinAss" src="img/MM11.jpg" style="opacity:0">
+				<img id="MM12" class="coinAss" src="img/MM12.jpg" style="opacity:0">
+				<img id="MM13" class="coinAss" src="img/MM13.jpg" style="opacity:0">
+				<img id="MM14" class="coinAss" src="img/MM14.jpg" style="opacity:0">
+				<img id="coinAss163" class="smallcoinAss" onclick="switchAss(this)" src="img/MM1.jpg">
+				<img id="coinAss164" class="smallcoinAss" onclick="switchAss(this)" src="img/MM2.jpg">
+				<img id="coinAss165" class="smallcoinAss" onclick="switchAss(this)" src="img/MM3.jpg">
+				<img id="coinAss166" class="smallcoinAss" onclick="switchAss(this)" src="img/MM4.jpg">
+				<img id="coinAss167" class="smallcoinAss" onclick="switchAss(this)" src="img/MM5.jpg">
+				<img id="coinAss168" class="smallcoinAss" onclick="switchAss(this)" src="img/MM6.jpg">
+				<img id="coinAss169" class="smallcoinAss" onclick="switchAss(this)" src="img/MM7.jpg">
+				<img id="coinAss170" class="smallcoinAss" onclick="switchAss(this)" src="img/MM8.jpg">
+				<img id="coinAss171" class="smallcoinAss" onclick="switchAss(this)" src="img/MM9.jpg">
+				<img id="coinAss172" class="smallcoinAss" onclick="switchAss(this)" src="img/MM10.jpg">
+				<img id="coinAss173" class="smallcoinAss" onclick="switchAss(this)" src="img/MM11.jpg">
+				<img id="coinAss174" class="smallcoinAss" onclick="switchAss(this)" src="img/MM12.jpg">				
+				<img id="coinAss175" class="smallcoinAss" onclick="switchAss(this)" src="img/MM13.jpg">
+				<img id="coinAss176" class="smallcoinAss" onclick="switchAss(this)" src="img/MM14.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >財務金融系學會</div>
+					<div class="pictext1Ass">給新生的一句話大學是一個嶄新的旅程，不管這段旅程是否順遂，希望各位都可以堅持的走完，在各個領域上都有滿滿的收穫，也歡迎大家加入財金大家庭。</div>
+				</div>
+				<div id="text13" class="pictext2Ass"></div>
+			</div>
+			<div id="NNgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/NNN.jpg">
+				<img id="NN0" class="coinAss" src="img/NN.jpg">
+				<img id="NN1" class="coinAss" src="img/NN1.jpg" style="opacity:0">
+				<img id="NN2" class="coinAss" src="img/NN2.jpg" style="opacity:0">
+				<img id="NN3" class="coinAss" src="img/NN3.jpg" style="opacity:0">
+				<img id="NN4" class="coinAss" src="img/NN4.jpg" style="opacity:0">
+				<img id="NN5" class="coinAss" src="img/NN5.jpg" style="opacity:0">
+				<img id="NN6" class="coinAss" src="img/NN6.jpg" style="opacity:0">
+				<img id="NN7" class="coinAss" src="img/NN7.jpg" style="opacity:0">
+				<img id="NN8" class="coinAss" src="img/NN8.jpg" style="opacity:0">
+				<img id="NN9" class="coinAss" src="img/NN9.jpg" style="opacity:0">
+				<img id="NN10" class="coinAss" src="img/NN10.jpg" style="opacity:0">
+				<img id="NN11" class="coinAss" src="img/NN11.jpg" style="opacity:0">
+				<img id="NN12" class="coinAss" src="img/NN12.jpg" style="opacity:0">
+				<img id="coinAss177" class="smallcoinAss" onclick="switchAss(this)" src="img/NN1.jpg">
+				<img id="coinAss178" class="smallcoinAss" onclick="switchAss(this)" src="img/NN2.jpg">
+				<img id="coinAss179" class="smallcoinAss" onclick="switchAss(this)" src="img/NN3.jpg">
+				<img id="coinAss180" class="smallcoinAss" onclick="switchAss(this)" src="img/NN4.jpg">
+				<img id="coinAss181" class="smallcoinAss" onclick="switchAss(this)" src="img/NN5.jpg">
+				<img id="coinAss182" class="smallcoinAss" onclick="switchAss(this)" src="img/NN6.jpg">
+				<img id="coinAss183" class="smallcoinAss" onclick="switchAss(this)" src="img/NN7.jpg">
+				<img id="coinAss184" class="smallcoinAss" onclick="switchAss(this)" src="img/NN8.jpg">
+				<img id="coinAss185" class="smallcoinAss" onclick="switchAss(this)" src="img/NN9.jpg">
+				<img id="coinAss186" class="smallcoinAss" onclick="switchAss(this)" src="img/NN10.jpg">
+				<img id="coinAss187" class="smallcoinAss" onclick="switchAss(this)" src="img/NN11.jpg">
+				<img id="coinAss188" class="smallcoinAss" onclick="switchAss(this)" src="img/NN12.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >會計系學會</div>
+					<div class="pictext1Ass">哈囉，我們會計系可愛的孩子們！希望你們在這大學四年中，可以從探索中獲得樂趣並習得專業知識，更希望你們能勇敢逐夢且努力實踐自我理想，朝成功邁進，加油！</div>
+				</div>
+				<div id="text14" class="pictext2Ass"></div>
+			</div>
+			<div id="OOgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/OOO.jpg">
+				<img id="OO0" class="coinAss" src="img/OO.jpg">
+				<img id="OO1" class="coinAss" src="img/OO1.jpg" style="opacity:0">
+				<img id="OO2" class="coinAss" src="img/OO2.jpg" style="opacity:0">
+				<img id="OO3" class="coinAss" src="img/OO3.jpg" style="opacity:0">
+				<img id="OO4" class="coinAss" src="img/OO4.jpg" style="opacity:0">
+				<img id="OO5" class="coinAss" src="img/OO5.jpg" style="opacity:0">
+				<img id="OO6" class="coinAss" src="img/OO6.jpg" style="opacity:0">
+				<img id="OO7" class="coinAss" src="img/OO7.jpg" style="opacity:0">
+				<img id="OO8" class="coinAss" src="img/OO8.jpg" style="opacity:0">
+				<img id="OO9" class="coinAss" src="img/OO9.jpg" style="opacity:0">
+				<img id="OO10" class="coinAss" src="img/OO10.jpg" style="opacity:0">
+				<img id="OO11" class="coinAss" src="img/OO11.jpg" style="opacity:0">
+				<img id="OO12" class="coinAss" src="img/OO12.jpg" style="opacity:0">
+				<img id="OO13" class="coinAss" src="img/OO13.jpg" style="opacity:0">
+				<img id="OO14" class="coinAss" src="img/OO14.jpg" style="opacity:0">
+				<img id="coinAss189" class="smallcoinAss" onclick="switchAss(this)" src="img/OO1.jpg">
+				<img id="coinAss190" class="smallcoinAss" onclick="switchAss(this)" src="img/OO2.jpg">
+				<img id="coinAss191" class="smallcoinAss" onclick="switchAss(this)" src="img/OO3.jpg">
+				<img id="coinAss192" class="smallcoinAss" onclick="switchAss(this)" src="img/OO4.jpg">
+				<img id="coinAss193" class="smallcoinAss" onclick="switchAss(this)" src="img/OO5.jpg">
+				<img id="coinAss194" class="smallcoinAss" onclick="switchAss(this)" src="img/OO6.jpg">
+				<img id="coinAss195" class="smallcoinAss" onclick="switchAss(this)" src="img/OO7.jpg">
+				<img id="coinAss196" class="smallcoinAss" onclick="switchAss(this)" src="img/OO8.jpg">
+				<img id="coinAss197" class="smallcoinAss" onclick="switchAss(this)" src="img/OO9.jpg">
+				<img id="coinAss198" class="smallcoinAss" onclick="switchAss(this)" src="img/OO10.jpg">
+				<img id="coinAss199" class="smallcoinAss" onclick="switchAss(this)" src="img/OO11.jpg">
+				<img id="coinAss200" class="smallcoinAss" onclick="switchAss(this)" src="img/OO12.jpg">				
+				<img id="coinAss201" class="smallcoinAss" onclick="switchAss(this)" src="img/OO13.jpg">
+				<img id="coinAss202" class="smallcoinAss" onclick="switchAss(this)" src="img/OO14.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >工業設計系學會</div>
+					<div class="pictext1Ass">哈囉各位新生！歡迎成為雲科工設的新成員！希望你們接下來四年能夠過得快樂又充實、達成自己的目標，讓大學生活充滿色彩！</div>
+				</div>
+				<div id="text15" class="pictext2Ass"></div>
+			</div>
+			<div id="PPgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/PPP.jpg">
+				<img id="PP0" class="coinAss" src="img/PP.jpg">
+				<img id="PP1" class="coinAss" src="img/PP1.jpg" style="opacity:0">
+				<img id="PP2" class="coinAss" src="img/PP2.jpg" style="opacity:0">
+				<img id="PP3" class="coinAss" src="img/PP3.jpg" style="opacity:0">
+				<img id="PP4" class="coinAss" src="img/PP4.jpg" style="opacity:0">
+				<img id="PP5" class="coinAss" src="img/PP5.jpg" style="opacity:0">
+				<img id="PP6" class="coinAss" src="img/PP6.jpg" style="opacity:0">
+				<img id="PP7" class="coinAss" src="img/PP7.jpg" style="opacity:0">
+				<img id="PP8" class="coinAss" src="img/PP8.jpg" style="opacity:0">
+				<img id="PP9" class="coinAss" src="img/PP9.jpg" style="opacity:0">
+				<img id="PP10" class="coinAss" src="img/PP10.jpg" style="opacity:0">
+				<img id="PP11" class="coinAss" src="img/PP11.jpg" style="opacity:0">
+				<img id="PP12" class="coinAss" src="img/PP12.jpg" style="opacity:0">
+				<img id="coinAss203" class="smallcoinAss" onclick="switchAss(this)" src="img/PP1.jpg">
+				<img id="coinAss204" class="smallcoinAss" onclick="switchAss(this)" src="img/PP2.jpg">
+				<img id="coinAss205" class="smallcoinAss" onclick="switchAss(this)" src="img/PP3.jpg">
+				<img id="coinAss206" class="smallcoinAss" onclick="switchAss(this)" src="img/PP4.jpg">
+				<img id="coinAss207" class="smallcoinAss" onclick="switchAss(this)" src="img/PP5.jpg">
+				<img id="coinAss208" class="smallcoinAss" onclick="switchAss(this)" src="img/PP6.jpg">
+				<img id="coinAss209" class="smallcoinAss" onclick="switchAss(this)" src="img/PP7.jpg">
+				<img id="coinAss210" class="smallcoinAss" onclick="switchAss(this)" src="img/PP8.jpg">
+				<img id="coinAss211" class="smallcoinAss" onclick="switchAss(this)" src="img/PP9.jpg">
+				<img id="coinAss212" class="smallcoinAss" onclick="switchAss(this)" src="img/PP10.jpg">
+				<img id="coinAss213" class="smallcoinAss" onclick="switchAss(this)" src="img/PP11.jpg">
+				<img id="coinAss214" class="smallcoinAss" onclick="switchAss(this)" src="img/PP12.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >建築與室內設計系學會</div>
+					<div class="pictext1Ass">雲林科大 分數頗高　建築室內 顏值最好　沒日沒夜 都睡不飽　雲科建築 肝膽相照　歡迎來到雲科建築系~</div>
+				</div>
+				<div id="text16" class="pictext2Ass"></div>
+			</div>
+			<div id="QQgroup"style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/QQQ.png">
+				<img id="QQ0" class="coinAss" src="img/QQ.jpg">
+				<img id="QQ1" class="coinAss" src="img/QQ1.jpg" style="opacity:0">
+				<img id="QQ2" class="coinAss" src="img/QQ2.jpg" style="opacity:0">
+				<img id="QQ3" class="coinAss" src="img/QQ3.jpg" style="opacity:0">
+				<img id="QQ4" class="coinAss" src="img/QQ4.jpg" style="opacity:0">
+				<img id="QQ5" class="coinAss" src="img/QQ5.jpg" style="opacity:0">
+				<img id="QQ6" class="coinAss" src="img/QQ6.jpg" style="opacity:0">
+				<img id="QQ7" class="coinAss" src="img/QQ7.jpg" style="opacity:0">
+				<img id="QQ8" class="coinAss" src="img/QQ8.jpg" style="opacity:0">
+				<img id="QQ9" class="coinAss" src="img/QQ9.jpg" style="opacity:0">
+				<img id="QQ10" class="coinAss" src="img/QQ10.jpg" style="opacity:0">
+				<img id="coinAss215" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ1.jpg">
+				<img id="coinAss216" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ2.jpg">
+				<img id="coinAss217" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ3.jpg">
+				<img id="coinAss218" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ4.jpg">
+				<img id="coinAss219" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ5.jpg">
+				<img id="coinAss220" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ6.jpg">
+				<img id="coinAss221" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ7.jpg">
+				<img id="coinAss222" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ8.jpg">
+				<img id="coinAss223" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ9.jpg">
+				<img id="coinAss224" class="smallcoinAss" onclick="switchAss(this)" src="img/QQ10.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >視覺傳達設計系學會</div>
+					<div class="pictext1Ass">嘿~親愛的視傳新朋友，歡迎你/妳們進到雲科視傳這個大家庭! 希望你們在這裡能夠得到你/妳們想要的東西，也許會很累，卻會讓你/妳永生難忘！</div>
+				</div>
+				<div id="text17" class="pictext2Ass"></div>
+			</div>
+			<div id="RRgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/RRR.jpg">
+				<img id="RR0" class="coinAss" src="img/RR.jpg">
+				<img id="RR1" class="coinAss" src="img/RR1.jpg" style="opacity:0">
+				<img id="RR2" class="coinAss" src="img/RR2.jpg" style="opacity:0">
+				<img id="RR3" class="coinAss" src="img/RR3.jpg" style="opacity:0">
+				<img id="RR4" class="coinAss" src="img/RR4.jpg" style="opacity:0">
+				<img id="RR5" class="coinAss" src="img/RR5.jpg" style="opacity:0">
+				<img id="RR6" class="coinAss" src="img/RR6.jpg" style="opacity:0">
+				<img id="RR7" class="coinAss" src="img/RR7.jpg" style="opacity:0">
+				<img id="RR8" class="coinAss" src="img/RR8.jpg" style="opacity:0">
+				<img id="RR9" class="coinAss" src="img/RR9.jpg" style="opacity:0">
+				<img id="RR10" class="coinAss" src="img/RR10.jpg" style="opacity:0">
+				<img id="coinAss225" class="smallcoinAss" onclick="switchAss(this)" src="img/RR1.jpg">
+				<img id="coinAss226" class="smallcoinAss" onclick="switchAss(this)" src="img/RR2.jpg">
+				<img id="coinAss227" class="smallcoinAss" onclick="switchAss(this)" src="img/RR3.jpg">
+				<img id="coinAss228" class="smallcoinAss" onclick="switchAss(this)" src="img/RR4.jpg">
+				<img id="coinAss229" class="smallcoinAss" onclick="switchAss(this)" src="img/RR5.jpg">
+				<img id="coinAss230" class="smallcoinAss" onclick="switchAss(this)" src="img/RR6.jpg">
+				<img id="coinAss231" class="smallcoinAss" onclick="switchAss(this)" src="img/RR7.jpg">
+				<img id="coinAss232" class="smallcoinAss" onclick="switchAss(this)" src="img/RR8.jpg">
+				<img id="coinAss233" class="smallcoinAss" onclick="switchAss(this)" src="img/RR9.jpg">
+				<img id="coinAss234" class="smallcoinAss" onclick="switchAss(this)" src="img/RR10.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >數位媒體設計系學會</div>
+					<div class="pictext1Ass">歡迎來到數媒大家庭!希望大家未來都可以開開心心並且在這裡學到許多東西，你們擁有最棒的機會，到處都是你的機會!!盡情的發光發熱吧!</div>
+				</div>
+				<div id="text18" class="pictext2Ass"></div>
+			</div>
+			<div id="SSgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/SSS.jpg">
+				<img id="SS0" class="coinAss" src="img/SS.jpg">
+				<img id="SS1" class="coinAss" src="img/SS1.jpg" style="opacity:0">
+				<img id="SS2" class="coinAss" src="img/SS2.jpg" style="opacity:0">
+				<img id="SS3" class="coinAss" src="img/SS3.jpg" style="opacity:0">
+				<img id="SS4" class="coinAss" src="img/SS4.jpg" style="opacity:0">
+				<img id="SS5" class="coinAss" src="img/SS5.jpg" style="opacity:0">
+				<img id="SS6" class="coinAss" src="img/SS6.jpg" style="opacity:0">
+				<img id="SS7" class="coinAss" src="img/SS7.jpg" style="opacity:0">
+				<img id="SS8" class="coinAss" src="img/SS8.jpg" style="opacity:0">				
+				<img id="SS9" class="coinAss" src="img/SS9.jpg" style="opacity:0">
+				<img id="SS10" class="coinAss" src="img/SS10.jpg" style="opacity:0">
+				<img id="SS11" class="coinAss" src="img/SS11.jpg" style="opacity:0">
+				<img id="SS12" class="coinAss" src="img/SS12.jpg" style="opacity:0">
+				<img id="SS13" class="coinAss" src="img/SS13.jpg" style="opacity:0">
+				<img id="SS14" class="coinAss" src="img/SS14.jpg" style="opacity:0">
+				<img id="SS15" class="coinAss" src="img/SS15.jpg" style="opacity:0">
+				<img id="SS16" class="coinAss" src="img/SS16.jpg" style="opacity:0">
+				<img id="coinAss235" class="smallcoinAss" onclick="switchAss(this)" src="img/SS1.jpg">
+				<img id="coinAss236" class="smallcoinAss" onclick="switchAss(this)" src="img/SS2.jpg">
+				<img id="coinAss237" class="smallcoinAss" onclick="switchAss(this)" src="img/SS3.jpg">
+				<img id="coinAss238" class="smallcoinAss" onclick="switchAss(this)" src="img/SS4.jpg">
+				<img id="coinAss239" class="smallcoinAss" onclick="switchAss(this)" src="img/SS5.jpg">
+				<img id="coinAss240" class="smallcoinAss" onclick="switchAss(this)" src="img/SS6.jpg">
+				<img id="coinAss241" class="smallcoinAss" onclick="switchAss(this)" src="img/SS7.jpg">
+				<img id="coinAss242" class="smallcoinAss" onclick="switchAss(this)" src="img/SS8.jpg">
+				<img id="coinAss243" class="smallcoinAss" onclick="switchAss(this)" src="img/SS9.jpg">
+				<img id="coinAss244" class="smallcoinAss" onclick="switchAss(this)" src="img/SS10.jpg">
+				<img id="coinAss245" class="smallcoinAss" onclick="switchAss(this)" src="img/SS11.jpg">
+				<img id="coinAss246" class="smallcoinAss" onclick="switchAss(this)" src="img/SS12.jpg">
+				<img id="coinAss247" class="smallcoinAss" onclick="switchAss(this)" src="img/SS13.jpg">
+				<img id="coinAss248" class="smallcoinAss" onclick="switchAss(this)" src="img/SS14.jpg">
+				<img id="coinAss249" class="smallcoinAss" onclick="switchAss(this)" src="img/SS15.jpg">
+				<img id="coinAss250" class="smallcoinAss" onclick="switchAss(this)" src="img/SS16.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >創意生活設計系學會</div>
+					<div class="pictext1Ass">Hey!各位創設的弟弟妹妹們，很高興你們能加入雲科大家庭行列!在這個新的環境，不要害怕失敗，我們都是你們最有力的靠山，努力地在這大學四年的舞台，發光發熱、燃燒你們內心的小宇宙吧!</div>
+				</div>
+				<div id="text19" class="pictext2Ass"></div>
+			</div>
+			<div id="UUgroup" style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/UUU.jpg">
+				<img id="UU0" class="coinAss" src="img/UU.jpg">
+				<img id="UU1" class="coinAss" src="img/UU1.jpg" style="opacity:0">
+				<img id="UU2" class="coinAss" src="img/UU2.jpg" style="opacity:0">
+				<img id="UU3" class="coinAss" src="img/UU3.jpg" style="opacity:0">
+				<img id="UU4" class="coinAss" src="img/UU4.jpg" style="opacity:0">
+				<img id="UU5" class="coinAss" src="img/UU5.jpg" style="opacity:0">
+				<img id="UU6" class="coinAss" src="img/UU6.jpg" style="opacity:0">
+				<img id="UU7" class="coinAss" src="img/UU7.jpg" style="opacity:0">
+				<img id="UU8" class="coinAss" src="img/UU8.jpg" style="opacity:0">
+				<img id="UU9" class="coinAss" src="img/UU9.jpg" style="opacity:0">
+				<img id="UU10" class="coinAss" src="img/UU10.jpg" style="opacity:0">
+				<img id="UU11" class="coinAss" src="img/UU11.jpg" style="opacity:0">
+				<img id="UU12" class="coinAss" src="img/UU12.jpg" style="opacity:0">
+				<img id="UU13" class="coinAss" src="img/UU13.jpg" style="opacity:0">
+				<img id="UU14" class="coinAss" src="img/UU14.jpg" style="opacity:0">
+				<img id="coinAss251" class="smallcoinAss" onclick="switchAss(this)" src="img/UU1.jpg">
+				<img id="coinAss252" class="smallcoinAss" onclick="switchAss(this)" src="img/UU2.jpg">
+				<img id="coinAss253" class="smallcoinAss" onclick="switchAss(this)" src="img/UU3.jpg">
+				<img id="coinAss254" class="smallcoinAss" onclick="switchAss(this)" src="img/UU4.jpg">
+				<img id="coinAss255" class="smallcoinAss" onclick="switchAss(this)" src="img/UU5.jpg">
+				<img id="coinAss256" class="smallcoinAss" onclick="switchAss(this)" src="img/UU6.jpg">
+				<img id="coinAss257" class="smallcoinAss" onclick="switchAss(this)" src="img/UU7.jpg">
+				<img id="coinAss258" class="smallcoinAss" onclick="switchAss(this)" src="img/UU8.jpg">
+				<img id="coinAss259" class="smallcoinAss" onclick="switchAss(this)" src="img/UU9.jpg">
+				<img id="coinAss260" class="smallcoinAss" onclick="switchAss(this)" src="img/UU10.jpg">
+				<img id="coinAss261" class="smallcoinAss" onclick="switchAss(this)" src="img/UU11.jpg">
+				<img id="coinAss262" class="smallcoinAss" onclick="switchAss(this)" src="img/UU12.jpg">				
+				<img id="coinAss263" class="smallcoinAss" onclick="switchAss(this)" src="img/UU13.jpg">
+				<img id="coinAss264" class="smallcoinAss" onclick="switchAss(this)" src="img/UU14.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >文化資產維護系學會</div>
+					<div class="pictext1Ass">哈囉!各位新生們，歡迎加入文資大家庭!大學生活絕對多采多姿~期許你們未來能找到屬於自己的一片天新的生活、新的挑戰，Got it and Catch it!</div>
+				</div>
+				<div id="text20" class="pictext2Ass"></div>
+			</div>
+			<div id="TTgroup"style="display:none">
+				<div class="coinAss"></div>
+				<img class="coinAss" src="img/TTT.jpg">
+				<img id="TT0" class="coinAss" src="img/TT.jpg">
+				<img id="TT1" class="coinAss" src="img/TT1.jpg" style="opacity:0">
+				<img id="TT2" class="coinAss" src="img/TT2.jpg" style="opacity:0">
+				<img id="TT3" class="coinAss" src="img/TT3.jpg" style="opacity:0">
+				<img id="TT4" class="coinAss" src="img/TT4.jpg" style="opacity:0">
+				<img id="TT5" class="coinAss" src="img/TT5.jpg" style="opacity:0">
+				<img id="TT6" class="coinAss" src="img/TT6.jpg" style="opacity:0">
+				<img id="TT7" class="coinAss" src="img/TT7.jpg" style="opacity:0">
+				<img id="TT8" class="coinAss" src="img/TT8.jpg" style="opacity:0">
+				<img id="TT9" class="coinAss" src="img/TT9.jpg" style="opacity:0">
+				<img id="TT10" class="coinAss" src="img/TT10.jpg" style="opacity:0">
+				<img id="TT11" class="coinAss" src="img/TT11.jpg" style="opacity:0">
+				<img id="TT12" class="coinAss" src="img/TT12.jpg" style="opacity:0">
+				<img id="TT13" class="coinAss" src="img/TT13.jpg" style="opacity:0">
+				<img id="TT14" class="coinAss" src="img/TT14.jpg" style="opacity:0">
+				<img id="TT15" class="coinAss" src="img/TT15.jpg" style="opacity:0">
+				<img id="TT16" class="coinAss" src="img/TT16.jpg" style="opacity:0">
+				<img id="TT17" class="coinAss" src="img/TT17.jpg" style="opacity:0">
+				<img id="TT18" class="coinAss" src="img/TT18.jpg" style="opacity:0">
+				<img id="TT19" class="coinAss" src="img/TT19.jpg" style="opacity:0">
+				<img id="TT20" class="coinAss" src="img/TT20.jpg" style="opacity:0">
+				<img id="TT21" class="coinAss" src="img/TT21.jpg" style="opacity:0">
+				<img id="TT22" class="coinAss" src="img/TT22.jpg" style="opacity:0">
+				<img id="TT23" class="coinAss" src="img/TT23.jpg" style="opacity:0">
+				<img id="TT24" class="coinAss" src="img/TT24.jpg" style="opacity:0">
+				<img id="TT25" class="coinAss" src="img/TT25.jpg" style="opacity:0">
+				<img id="TT26" class="coinAss" src="img/TT26.jpg" style="opacity:0">
+				<img id="TT27" class="coinAss" src="img/TT27.jpg" style="opacity:0">
+				<img id="TT28" class="coinAss" src="img/TT28.jpg" style="opacity:0">
+				<img id="coinAss265" class="smallcoinAss" onclick="switchAss(this)" src="img/TT1.jpg">
+				<img id="coinAss266" class="smallcoinAss" onclick="switchAss(this)" src="img/TT2.jpg">
+				<img id="coinAss267" class="smallcoinAss" onclick="switchAss(this)" src="img/TT3.jpg">
+				<img id="coinAss268" class="smallcoinAss" onclick="switchAss(this)" src="img/TT4.jpg">
+				<img id="coinAss269" class="smallcoinAss" onclick="switchAss(this)" src="img/TT5.jpg">
+				<img id="coinAss270" class="smallcoinAss" onclick="switchAss(this)" src="img/TT6.jpg">
+				<img id="coinAss271" class="smallcoinAss" onclick="switchAss(this)" src="img/TT7.jpg">
+				<img id="coinAss272" class="smallcoinAss" onclick="switchAss(this)" src="img/TT8.jpg">
+				<img id="coinAss273" class="smallcoinAss" onclick="switchAss(this)" src="img/TT9.jpg">
+				<img id="coinAss274" class="smallcoinAss" onclick="switchAss(this)" src="img/TT10.jpg">
+				<img id="coinAss275" class="smallcoinAss" onclick="switchAss(this)" src="img/TT11.jpg">
+				<img id="coinAss276" class="smallcoinAss" onclick="switchAss(this)" src="img/TT12.jpg">				
+				<img id="coinAss277" class="smallcoinAss" onclick="switchAss(this)" src="img/TT13.jpg">
+				<img id="coinAss278" class="smallcoinAss" onclick="switchAss(this)" src="img/TT14.jpg">
+				<img id="coinAss279" class="smallcoinAss" onclick="switchAss(this)" src="img/TT15.jpg">
+				<img id="coinAss280" class="smallcoinAss" onclick="switchAss(this)" src="img/TT16.jpg">
+				<img id="coinAss281" class="smallcoinAss" onclick="switchAss(this)" src="img/TT17.jpg">
+				<img id="coinAss282" class="smallcoinAss" onclick="switchAss(this)" src="img/TT18.jpg">
+				<img id="coinAss283" class="smallcoinAss" onclick="switchAss(this)" src="img/TT19.jpg">
+				<img id="coinAss284" class="smallcoinAss" onclick="switchAss(this)" src="img/TT20.jpg">
+				<img id="coinAss285" class="smallcoinAss" onclick="switchAss(this)" src="img/TT21.jpg">
+				<img id="coinAss286" class="smallcoinAss" onclick="switchAss(this)" src="img/TT22.jpg">
+				<img id="coinAss287" class="smallcoinAss" onclick="switchAss(this)" src="img/TT23.jpg">
+				<img id="coinAss288" class="smallcoinAss" onclick="switchAss(this)" src="img/TT24.jpg">
+				<img id="coinAss289" class="smallcoinAss" onclick="switchAss(this)" src="img/TT25.jpg">
+				<img id="coinAss290" class="smallcoinAss" onclick="switchAss(this)" src="img/TT26.jpg">				
+				<img id="coinAss291" class="smallcoinAss" onclick="switchAss(this)" src="img/TT27.jpg">
+				<img id="coinAss292" class="smallcoinAss" onclick="switchAss(this)" src="img/TT28.jpg">
+				<div class="TextAss">
+					<div id="nameA" class="nameAss" >應用外語系學會</div>
+					<div class="pictext1Ass">DAFL DAFL We’re Wonderful ！Dear學弟學妹們大家好，歡迎加入應外系這個大家庭，未來的三天將有我們與你們一起度過， 相信未來四年也會有美好的大學生活，希望大家能夠更熟悉彼此唷！</div>
+				</div>
+				<div id="text21" class="pictext2Ass"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<footer>
+	
+</footer>
+</html>

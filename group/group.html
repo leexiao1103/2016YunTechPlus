@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="2016 YunTech+ Orientation Camp 新生學涯開展營">
+    <meta name="keywords" content="2016 yuntech+, 2016 開展營, 2016雲科開展營">
+    <meta name="author" content="LeeXiao">
+
+	<link rel="icon" href="../bighead.png">
+
+	<title>2016 YunTech+ Orientation Camp 新生學涯開展營</title>
+
+	<link href="../style.css" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="../js/activity.js"></script>
+	<!--櫻花飄-->
+	<link href="../leaf/leaf_style.css" rel="stylesheet">
+	<script src="../leaf/leaf_jquery.js" type="text/javascript"></script>
+	<!--------------------------------------------------->
+	
+</head>
+<body style="background:#EAE8E9;">
+<div id="window"></div>
+<a class="fbicon" href="https://www.facebook.com/2016YuntechPlus/" target="_blank"><img id="fb_icon"style="width:100%; height:auto;" src="../FB.png"></a>
+<header>
+	<div id="treeleft"><img id="leftpic" src="../tree_left.png"></div>
+	<div id="treeright"><img id="rightpic" src="../tree_right.png"></div>
+	<div id="sloth" onmouseover="slothcall()" onmouseout="slothout()">
+		<img src="../sloth.png">
+		<audio id="sound">
+			<source src="../slothcall.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<!--櫻花-->
+	<div id="leaf1"></div><div id="leaf2"></div><div id="leaf3"></div><div id="leaf4"></div><div id="leaf5"></div><div id="leaf6"></div><div id="leaf7"></div>
+	<div id="leaf8"></div><div id="leaf9"></div><div id="leaf10"></div><div id="leaf11"></div><div id="leaf12"></div><div id="leaf13"></div><div id="leaf14"></div><div id="leaf15"></div>
+
+	<nav id="bar">
+			<div id="tinybar" style="float:left;"><div id="menu-toggle" onclick="tinybar()">&#9776;</div><a href="../home.html"><img style="width: 140px; height: 40px;"src="../navbar/yuntech_logo_2.png" width="200px" height="75px"></a></div>
+			<ul class="tinymenu">
+				<li id="d1"onclick="tinybar_down(this)"><a>營隊宗旨</a>
+					<ul id="down1" class="tinymenu_down">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html">最新資訊</a></li>
+				<li id="d2"onclick="tinybar_down(this)"><a>活動資訊</a>
+					<ul id="down2" class="tinymenu_down">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li id="d3"onclick="tinybar_down(this)"><a>營隊組織</a>
+					<ul id="down3" class="tinymenu_down">
+						<li><a href="../team/workteam.html">執行團隊</a></li>
+						<li><a href="../team/associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="group.html">社團簡介</a></li>
+				<li id="d4"onclick="tinybar_down(this)"><a>精彩回顧</a>
+					<ul id="down4" class="tinymenu_down">
+						<li><a href="../lastyear/picture.html">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>				
+					</ul>
+				</li>
+				<li id="d5"onclick="tinybar_down(this)"><a>交通資訊</a>
+					<ul id="down5" class="tinymenu_down">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>							
+					</ul>
+				</li>
+				<li><a href="../connect/nnect.html">相關連結</a></li>
+				<li id="d6"onclick="tinybar_down(this)"><a>Ｑ＆Ａ</a>
+					<ul id="down6" class="tinymenu_down">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+	</nav>
+
+	<div id="mynavbar" class="fixed" style="background-color:rgba(232,233,234,0.75);">
+		<nav>
+			<ul>
+				<li><a href="../home.html"><img src="../navbar/yuntech_logo.png" width="220px" height="67px"></a></li>
+				<li><a><img src="../navbar/01.png" width="50px" height="50px"><br>營隊宗旨</a>
+					<ul class="dropdown-menu">
+						<li><a href="../purpose/principal.html">校長的話</a></li>
+						<li><a href="../purpose/campintro.html">營隊簡介</a></li>
+						<li><a href="../purpose/purpose.html">營隊目的</a></li>
+						<li><a href="../purpose/convention.html">營隊公約</a></li>
+						<li><a href="../purpose/clothes.html">服裝儀容</a></li>
+						<li><a href="../purpose/campsong.html">營歌欣賞</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html"><img src="../navbar/02.png" width="40px" height="50px"><br>最新資訊</a></li>
+				<li><a><img src="../navbar/03.png" width="55px" height="50px"><br>活動資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../activity/day1.html">第一天行程</a></li>
+						<li><a href="../activity/day2.html">第二天行程</a></li>
+						<li><a href="../activity/day3.html">第三天行程</a></li>
+					</ul>
+				</li>
+				<li><a><img src="../navbar/04.png" width="50px" height="50px"><br>營隊組織</a>
+					<ul class="dropdown-menu">
+						<li><a href="../team/workteam.html">執行團隊</a></li>
+						<li><a href="../team/associations.html">隊輔人員</a></li>
+					</ul>
+				</li>
+				<li><a href="group.html"><img src="../navbar/05.png" width="50px" height="50px"><br>社團簡介</a></li>
+				<li><a><img src="../navbar/06.png" width="50px" height="50px"><br>精彩回顧</a>
+					<ul class="dropdown-menu">
+						<li><a href="../lastyear/picture.html">回憶照片</a></li>
+						<li><a href="../lastyear/video.html">找回感動</a></li>
+					</ul>
+				</li>
+				<li><a><img src="../navbar/07.png" width="50px" height="50px"><br>交通資訊</a>
+					<ul class="dropdown-menu">
+						<li><a href="../traffic/goyuntech.html">如何到雲科</a></li>
+						<li><a href="../traffic/schoolcar.html">校車資訊</a></li>
+						<li><a href="../traffic/map.html">雲科地圖</a></li>
+					</ul>
+				</li>
+				<li><a href="../connect/connect.html"><img src="../navbar/08.png" width="50px" height="50px"><br>相關連結</a></li>
+				<li><a><img src="../navbar/09.png" width="50px" height="50px"><br>Ｑ＆Ａ</a>
+					<ul class="dropdown-menu">
+						<li><a href="../QA/QA.html">常見問題</a></li>
+						<li><a href="../QA/leave.html">請假流程</a></li>
+						<li><a href="../QA/2016雲科大開展營請假單.docx">請假單</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+	<div id="six_group">
+		<div id="a" class="six_group_title"><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"><h1 style="display:inline-block; font-size:25pt; color:#e9bf33;">自治性社團</h1><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"></div>
+		<div id="a01" class="group_block">
+			<div class="group_logo"><img src="img/自01-學生會.png" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">學生自治會<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">學生和校方的溝通窗口、學生權益的維護，以及眾星閃耀的演唱會及名人講座。想有不一樣的大學生活，了解潛能的極限嗎？學生會等你和我們一起，畫出精彩的大圓！</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>星期一至四 19:00-21:00  GA209</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>想要有與眾不同的大學生活嗎？學生會八大部門─活動部、公關部、學權部、美宣部、新聞部、財務部、總務部、秘書部等你來挑戰，尋找青春的寶藏！</h3></div>
+		</div>
+		<div id="a02" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">學生宿舍自治委員會<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">宿委會是一群擁有極大服務熱忱的同學組成，我們的宗旨是服務住宿生，解決他們的問題，另外我們也會舉辦許多娛樂活動回饋給住宿生，邀請大家來同樂。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3></h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/自02-宿委會.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>如果你也有一顆服務的心，或是你想學習如何籌備活動，歡迎加入我們！</h3></div>
+		</div>
+		<div id="a03" class="group_block">
+			<div class="group_logo"><img src="img/自03-學膳會.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">學生饍食自治委員會<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">平時社課做小點心主打烘培系列不管是布丁、蛋糕還是餅乾都難不倒我們喔</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每週四晚上七點學膳會會辦（宿委會對面）</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>歡迎雲科所有喜歡烘焙喜歡吃喜歡玩的帥哥美女來加入我們學膳會我們是一個溫馨又和諧的大家庭還不快來嗎</h3></div>
+		</div>
+		<div id="s" class="six_group_title"><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"><h1 style="display:inline-block; font-size:25pt; color:#e9bf33;">學藝性社團</h1><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"></div>
+		<div id="s01" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">攝影社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲科大攝影社擁有26年經驗的團隊，專業兼活潑的攝影社，在一群擁有攝影魂的幹部帶領下，致力於推廣攝影觀念與美學，藉此讓雲科大的學生喜愛攝影，認識攝影。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周三晚上7:00到9:00 活動中心GA201</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學01-雲科大攝影社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>喜歡攝影嗎?如果你也和我們一樣愛好攝影，不必擔心沒有好設備和經驗，加入我們雲科大攝影社和我們一同學習攝影的點點滴滴，別懷疑，來就對了，社博攤位4號，等你來參加喔。</h3></div>
+		</div>
+		<div id="s02" class="group_block">
+			<div class="group_logo"><img src="img/學02-陶藝社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">陶藝社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">承接了歷代學長姐的專業知識和經驗，我們有專業的設備跟豐富的資源，可以體驗手拉坯、各種手捏技巧、陶板創作以及上釉技法，期許能為大家帶來最棒的創作空間。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每個星期二、四晚上7點~9點，在GAB104(活動中心地下室)</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>不論是對陶有興趣的你、已經有玩陶經驗的你、對陶土很陌生但是很好奇的你，或只是想要交交朋友的你，都歡迎來陶藝社找我們玩哦！</h3></div>
+		</div>
+		<div id="s03" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">信望愛社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">這是一個由有基督信仰的同學所組成的社團，平時集社時會一起唱詩歌、玩遊戲、分享信仰與生活相關的信息，並且會舉辦一些活動和營隊，歡迎任何有興趣的同學參加。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每週四晚上7:00~9:30，在活動中心二樓GA242茶道教室</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學03-信望愛社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>同學同學看這邊~~~~~~想知道如何保持生活happy的秘訣嗎？想過個可以好好做個真實的自己的生活嗎?在碰到困難無助的事情時不知道該怎麼辦嗎?這裡有一個天大好消息，想知道答案的話就來信望愛社一趟吧!!!Life is a struggle,but God he’s struggle with you!!!</h3></div>
+		</div>
+		<div id="s04" class="group_block">
+			<div class="group_logo"><img src="img/學04-築藝花卉設計社logo.png" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">築藝花卉設計社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">想知道怎麼做出動人的傳情禮物，送給那個心儀的 她/他 嗎？想要充實自己的寒暑假 ，一起帶營隊嗎?加入築藝大家庭　非你莫屬～～！！！</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周三晚上7:00~9:00 地點 GAB 106</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>想要更深入了解我們嗎？歡迎來築藝社辦　ＧＡ２１７找我們哦最重要的是，好玩的築藝社博遊戲、抽獎正等著你　快來吧　＝）</h3></div>
+		</div>
+		<div id="s05" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">福智青年社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">福智青年社由一群瘋狂、有理想的幹部組成，強調多方面發展及一群可以談心的好朋友，永遠給你家的感覺，誠摯邀請您和我們共享幸福歡樂的心靈之夜。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>集社時間：每週一晚上7：00~9：00 集社地點：活動中心一樓GA107 社辦位址：活動中心二樓GA222</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學05-福智青年社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>精心安排大學最需要的時間、情緒、人際管理、全校蔬食展、福青土屋社遊及大專班等課程，每週還有社員及與教師的聚餐，維繫社團感情，重點是不強制繳交社費喔~*社博會在19攤位，表演第9場 Yeap*</h3></div>
+		</div>
+		<div id="s06" class="group_block">
+			<div class="group_logo"><img src="img/學06-櫻華社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">櫻華社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">看到櫻華社應該會想到櫻花，想到櫻花就會想到日本，想到日本有些人應該會想到宅文化，櫻華社就是以日本文化+宅文化研究為主題的社團，希望大家加入後可以對日本文化有更加的了解</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周三晚上7:30~晚上9:00 GA242</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>從以前就很喜歡動漫或是玩cosplay嗎？找不到同好嗎？櫻華社將會是你最佳選擇</h3></div>
+		</div>
+		<div id="s07" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">咖啡文化研習社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">咖啡研習社是由一群熱愛咖啡文化的夥伴們所組成，我們希望讓來到社課的人能透過親手煮一杯咖啡來認識咖啡本質，並更一進步發展出各式各樣的創意咖啡(愛爾蘭咖啡、拿鐵、鴛鴦咖啡..)來改變人們對於咖啡既苦又澀的刻板印象。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周二晚上19:00~21:00，雲科咖研社在GAB106歡迎您</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學07-咖啡研習社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>雲科大的新鮮人們~~~快來一同學習咖啡文化、享受咖啡香吧!!!我們的社團博覽會攤位是43號哦，歡迎來認識我們!</h3></div>
+		</div>
+		<div id="s08" class="group_block">
+			<div class="group_logo"><img src="img/學08-法輪大法社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">法輪大法社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">一群以「真、善、忍」為做人準則的青年學子，希望藉由社團的活動，讓參與者了解「真、善、忍」內涵與生活的連結，期盼正的力量更能讓心靈健康。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>集社時間地點依社團公告為準</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>哈囉~各位新生，我們在社博舞台左側擺攤喔！歡迎大家來認識我們的社團~</h3></div>
+		</div>
+		<div id="s09" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">佛學社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">國立雲林科技大學-佛學社於民國96年在指導老師與指導師父胼手胝足成立下，發願建立佛學社以啟學子學佛之路，一路走來秉持佛陀慈悲喜捨致力推廣耕心教育理念，在社團裡，我們每個人都可學習到「如何帶給別人快樂、如何分擔別人的煩惱、如何發自內心擁有歡喜心、如何將自己擁有的智慧與別人分享，更重要的是學習到多方面的知識經驗與技能」，結合「師父獨有的心靈生命教育方式」，讓所有前往佛學社的每一位成員都能夠逐漸「親近本我、發心行善、勇於面對」。本社團已嘗試舉辦許多不同活動，以期許能夠落實佛法中「信、願、行」的精神，其中最具代表性的活動為5月份的母親節感恩活動，其中意涵為「一切行善，孝順為先。」我們透過影片、撰寫卡片等方式，來回想母親為我們生活付出的點滴，並表達我們的感恩之情，期望自己不忘本，懂得感恩是學習的開始。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>時間：每週三 早上10點 地點：仁義社辦</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學09-佛學社LOGO.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>來到佛學社，我們每個人都可學習到「如何帶給別人快樂、如何分擔別人的煩惱、如何發自內心擁有歡喜心、如何將自己擁有的智慧與別人分享，更重要的是學習到多方面的知識經驗與技能」，歡迎您一同來體驗</h3></div>
+		</div>
+		<div id="s10" class="group_block">
+			<div class="group_logo"><img src="img/學10-塔羅牌研習社LOGO.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">塔羅牌研習社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">我們是一群擁有東方神秘力量的人，我們相信我們手握著的牌，一牌在手希望無窮，幫助生活中遇到頻頸的人們，社團不定期聚餐，好料吃不完，想要在大學學習不一樣的興趣嗎?想要成為與眾不同的人物嗎，快來加入我們吧!</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>星期一晚上19:00~21:00 GAB106</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>在學習大學必修四學分，課業、社團、愛情、打工，過程中有遇到困難，歡迎你來找我們，塔羅牌會帶領你了解問題所在，幫助你解決困難，大學中有著各式各樣千奇百怪的社團等著你，想要在大學中找到屬於自己的另一個家嗎？想要在大學學習不一樣的興趣嗎？想要成為與眾不同的人物嗎，快來加入我們吧!</h3></div>
+		</div>
+		<div id="s11" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">大願禪學社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">禪即是清淨，我們跟著教授法師學習定心，讓身心靈沉靜。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周三12:00~13:00 GA106</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學11-大願禪學社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>你好!每周三12:00~13:00 準時開始社課! 午餐由精舍無私免費提供，隨時都歡迎各位來與我們結緣喔~</h3></div>
+		</div>
+		<div id="s12" class="group_block">
+			<div class="group_logo"><img src="img/學12-荒野保育社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">荒野保育社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">荒野保育社絕非只是去保護荒野！我們除了上有關於動植物外的課程，還有許多手做課程，讓我們一起豐富大學生活吧！</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每個禮拜一，19:00~21:00</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>在雲科眾多社團內，如果你想做一些可愛的手做，或者更加了解動植物，那荒野保育社絕對是你的第一選擇！也不用煩惱上社課時會不會熱，或者被蚊子叮，荒野保育社絕對是你的第一選擇！</h3></div>
+		</div>
+		<div id="s13" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">機械動力研究社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">喜歡騎車嗎？想讓騎乘技巧更上一層樓嗎？或想透過DIY來認識自己的愛車嗎？ 加入機研社，學習更豐富的汽機車知識外，一同熱血騎車出遊，走遍好山好水，讓自己與愛車有很不一樣的價值！</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周四晚上６：３０～６：４５雲科大校門口集合 (騎機車)</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學13-機械動力研習社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>趕快加入機研社一起來研究你的愛車，好好培養人與車的感情吧！</h3></div>
+		</div>
+		<div id="s14" class="group_block">
+			<div class="group_logo"><img src="img/學14-印心社.png" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">印心社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">印心大家庭，歡迎新生們一同來體驗靜坐美好與平靜，讓心回到原點，不讓成長路上的汙濁，干擾本心，並一起在這個社團裡，遇到一群很溫暖的人，並在過程中，一同完成很有意義的事情，印心社陪伴你的領袖路。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>集社地點:GA218(活動中心2樓)</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>新生們大家好~我們是印心社~~印心陪你當王者，印心讓你當領袖，印心讓你成英雄！想再大學生涯當中找到值得奮鬥的目標嗎？想結交到一輩子的好朋友嘛？想讓自己變的價值連城嗎？想體驗內在真正的寧靜嗎？讓印心社藉由靜坐讓你找到最寶貴的自己!!</h3></div>
+		</div>
+		<div id="s15" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">如來實證社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲科如來實證社是一群志同道合的雲科學子因體會入到   明師座下禪行的美好而成立，透過禪行開啟本自俱足的如來智慧，面對課業、感情、人際、家庭等等無不隨順圓滿。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3></h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/學15-如來實證社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>哈囉~~各位新生好，我們社團47號擺攤唷，歡迎來認識我們如來實證社 :)</h3></div>
+		</div>
+		<div id="h" class="six_group_title"><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"><h1 style="display:inline-block; font-size:25pt; color:#e9bf33;">康樂性社團</h1><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"></div>
+		<div id="h01" class="group_block">
+			<div class="group_logo"><img src="img/康01-國樂社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">國樂社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">對中國古代武俠戲劇中氣勢磅礡的樂章深深著迷嗎？想要體驗傳統東方樂器與現代流行音樂碰撞出毫無違和感的新火花嗎？不局限於優雅及雄壯的東方古典樂，更融合於現代流行樂元素交織出新篇章正是思筑樂坊的宗旨和樂趣所在。歡迎對音樂有興趣的朋友們一起來參與及見證音樂跨越年代、類別、與國界的美妙魔法吧!</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>星期三19：00~21：00  活動中心GA332(雲院書城上方三樓)</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>思筑樂坊，擁有一群熱愛國樂的夥伴。不要害怕沒學過樂器，我們都會有熱情的學長姐教學。也請有學過樂器的同學，不要放棄國樂夢，讓我們一起築起更強的國樂魂吧!社團博覽會表演順序第24個，也請大家來面對舞台右手邊的社博攤位走走喔!!!</h3></div>
+		</div>
+		<div id="h02" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">管樂社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲響管樂社顧名思義便是想將樂音響遍雲林地區，讓從台灣各地來讀書的朋友們能夠認識管樂並享受管樂器發出的美妙聲音。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>集社時間：每周一、二 19:00~21:00 集社地點：GA331 (雲院書城3樓)</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康02-管樂社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>想訓練你的「嘴上功夫」嗎？想增強你的「手指速」度嗎？想跟「啤酒肚」說掰掰嗎？想擁有「一目十行」的能力嗎？那就快到GA331找我們吧！我們不是健身房，是「雲響管樂社」！！！歡迎熱愛管樂、對管樂有憧憬的你加入！我們的社博攤位號碼是8號~</h3></div>
+		</div>
+		<div id="h03" class="group_block">
+			<div class="group_logo"><img src="img/康03-吉他社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">民謠吉他社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">吉他社是由一群喜歡音樂的朋友組成的大家庭，我們會定期舉辦音樂會，分享彼此的音樂故事，而我們平常在每週二的社課外，還有爵士鼓教學，歡迎大家加入吉他社吧!</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每週二晚上19:00~21:00  地點在活動中心GA132</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>我們吉他社社博攤位就在OO號，當天我們會在旁邊的小舞台會有一連串精彩的音樂表演，喜歡音樂或是想要加入吉他社的朋友們，千萬不要錯過吉他社的攤位喔！</h3></div>
+		</div>
+		<div id="h04" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">登山社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">這是一個沒有暴力溫馨的地方，登山攀岩加溯溪，大家一起出來玩，Welcome~</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周四19:00 GA200</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康04-登山社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>讓雙眼成為你的相機，讓足跡寫下你的記憶，讓我們一起縱情山水、探索秘境</h3></div>
+		</div>
+		<div id="h05" class="group_block">
+			<div class="group_logo"><img src="img/康05-雲大合唱團.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">雲大合唱團<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲大合唱團已歷經18個歲月，在現任指導老師吳孟樺帶領下，由傳統和聲，逐漸朝Acapella方向發展，年度重大活動有迎新、情歌大賽、團慶、成果發表會、六社音樂會…等活動</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周一、周四19:30~21:30 每周二社辦值班</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>唱歌。是一件令人放鬆、快樂的事情，如果你也有相同的感受，那就趕緊加入雲大合唱團吧！那怕是沒樂理沒音感，只要有熱忱都能學好唱歌！另外提供吉他鋼琴伴奏教學</h3></div>
+		</div>
+		<div id="h06" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">網球社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">我們是一群熱血的青年，在網球場上和夥伴們揮灑青春的汗水、創造熱血的回憶，想要加入我們，就在星期一、星期三晚上18:30~21:00來紅土網球場報到吧!</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每週一、三晚上18:30~21:00 紅土網球場</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康06-網球社.png" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>活力、熱血是我們的象徵，紅土球場上奔馳的身影與青春的吶喊是我們的代表，每一次揮拍是夢想的開始，青春就在網球場上。想成為熱血陽光的大學生就加入網球社吧！</h3></div>
+		</div>
+		<div id="h07" class="group_block">
+			<div class="group_logo"><img src="img/康07-溜冰社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">溜冰社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">你以為我們只是溜來溜去而已嗎？不！溜冰社有花式溜冰、煞車還有曲棍球。還能帶你天上飛、地上玩、全臺溜透透 。你，心動了嗎？那就快來加入溜冰大家庭吧！讓我們天天玩在一起！</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>時間：每個禮拜二、四晚上6:30-9:00 地點：溜冰場</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>想就去做吧！不要害怕跌倒，跌倒才能使你成長，就像溜冰一樣，從哪跌倒就從哪裡再站起來。社博，學餐前柏油路，等你來試溜。FB請搜尋：雲溜俱樂部。</h3></div>
+		</div>
+		<div id="h08" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">國際標準舞研習社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">大家好，我們是國際標準舞研習社!很多愛跳舞的朋友們都聚集在這裡，學習各式各樣優美的舞蹈，利用肢體表達情感，享受跳舞的快樂，更能了解和舞伴的默契培養與互動，加入國標社是你自信亮眼的第一步!</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>禮拜一跟禮拜四 晚上七點到晚上九點 </h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康08-國際標準舞研習社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>加入國標社是你自信亮眼的第一步!</h3></div>
+		</div>
+		<div id="h09" class="group_block">
+			<div class="group_logo"><img src="img/熱門舞蹈社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">熱門舞蹈社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲科熱門舞蹈社成立至今已經到第十六屆，主要舞風以hiphop、girl style為主。 我們積極的參與各種校內外的舞蹈活動（迎新、期末社聚、六社舞展、成果展），讓所有參加熱舞社的人都有機會表現自己的學習成果，另外並聘請來自台北舞蹈工作室的專業指導老師，讓社員們有更佳良好的學習環境。我們提供了一個練舞的環境，希望可以讓社員們盡情的學舞，藉著音樂、舞步好好的表達自我。 我們希望能把跳舞的基礎、概念等傳授給社員們，奠定跳舞的正確觀念，並鼓勵社員們多積極參與團體的活動，不只是要強化跳舞的技能，更是要增進社員之間和與社團間的關係互動。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周二跟四 晚上19:00~21:00 體育館韻律教室/GAB101</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>只要你喜歡跳舞，對跳舞有興趣，聽到音樂會想動動身體，歡迎你加入雲科熱門舞蹈社!! 我們社團博覽會在30號攤位，表演是倒數第二個，歡迎來看我們喔 :)</h3></div>
+		</div>
+		<div id="h10" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">有氧舞蹈社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">藉由有氧舞蹈，紓解壓力、帶給身心健康，以及學習各種氧種舞蹈風格，享受舞蹈過程、享受有氧節奏，充實自己，愛上自己！</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周二晚上7:30 GAB101 </h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康10-有氧舞蹈社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>想在舞臺發光發熱嗎？想在大學來點不一樣的嗎？想在青春留下美好的回憶嗎？快給自己一個機會，來有氧舞蹈社就對了，有氧就缺你一個！</h3></div>
+		</div>
+		<div id="h11" class="group_block">
+			<div class="group_logo"><img src="img/康11-單車社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">單車社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲科學生除了讀書之餘，常常會利用時間運動，想要體驗熱血又難忘的時光嗎?一起加入雲科大單車社吧!!帶你走遍全台灣!!</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>周四晚上7:00~9:00 GA247</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>一群對單車有熱血的青年，不管事新手級或是專業級，就在社博17號攤位17熱血一下吧!</h3></div>
+		</div>
+		<div id="h12" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">劍道社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">我們社團以學習劍道技巧為目標，訓練過程中，不僅可以強健體魄，還能防身。我們也會與其他社團一起舉辦活動可以與各個社團互相交流，認識大家，社員們會定期舉行友誼賽，如果有機會可以積極參加比賽，為校爭光，讓更多人知道劍道社。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每週二晚上7點～晚上9點，活動中心二樓</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康12-劍道社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>歡迎各位一起來體驗看看唷！每次練習一起來揮灑汗水、燃燒脂肪、訓練肌耐力,不僅保持你最棒的身材、身體也會更健康。</h3></div>
+		</div>
+		<div id="h13" class="group_block">
+			<div class="group_logo"><img src="img/康13-棋藝社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">棋藝社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">棋藝社為喜歡下棋的同好者，提供一個以棋會友可供研究與學習的社團。訓練思考及邏輯能力，充實人文素養，達到「科技與人文」並重。現有專職的圍棋教師擔任老師。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>社課：每周二晚上七點GA244。聯合社辦GA253。</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>不管是受到AlphaGO還是棋靈王的吸引，只要你對圍棋有興趣或是曾經學過圍棋，棋藝社都歡迎你們到來。社博當天在攤位33也有設攤，歡迎交流小試身手及探聽訓練活動規劃。</h3></div>
+		</div>
+		<div id="h14" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">魔幻社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">想知道魔術的奧妙與神奇,並且帶給大家歡樂,又想享受燈光下的掌聲及眾人的矚目魔幻社是你圓夢的好機會</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周二19:00-21:00 /   GA242茶道教室</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康14-魔幻社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>有些事做了會後悔一陣子,但不做會後悔一輩子,社團是你大學很好的家,我們社博攤位是31號大家趕快來</h3></div>
+		</div>
+		<div id="h15" class="group_block">
+			<div class="group_logo"><img src="img/康15-拳擊社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">拳擊社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">以運動、防身為主要目的，另有專業教練指導拳擊基本技巧。有沙包、拳套等設備配合訓練。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>星期一、三晚上6:30~9:00，活動中心2樓東側</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>參加社團不要有壓力，課業壓力都已經夠大了，當作運動或交朋友也歡迎來拳擊社，當然想學點防身的最歡迎～</h3></div>
+		</div>
+		<div id="h16" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">撞球社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">哈囉^^我們是撞球社，我們每周三晚上都會在體育館集社唷，平時也會出沒在站前的世紀撞球館，期待大家球技都能更上一層樓~</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每星期三於體育館二樓撞球室 晚上6:30-9:00</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康16-撞球社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>無論你是否會打撞球，也不論妳是否了解撞球的規則！都歡迎你/妳加入我們的行列，一同參與這臺灣戰績輝煌的運動項目喔！</h3></div>
+		</div>
+		<div id="h17" class="group_block">
+			<div class="group_logo"><img src="img/康17-鋼琴社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">鋼琴社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">鋼琴社於每週三設有社課大班教學，讓初學者也能夠快速上手鋼琴；而每週一到五晚上也會安排個別教學課程，讓有學琴經驗的人也能精進與交流琴技~</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每週三晚上7:00~9:00(大班教學)，幹部值班時間 : 週一到週五晚上於鋼琴社社辦 社辦地點：活動中心GA250</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>哈囉雲科新鮮人～想要聆聽優美的琴聲？！ 想要學習躍於指間的動人旋律？！ 無論是初學鋼琴、琴技交流或想吃宵夜，只要來鋼琴社一定能燃起你對音樂的熱情！！</h3></div>
+		</div>
+		<div id="h18" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">射箭社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">射箭不僅能鍛鍊身體，還能訓練自己的專注力，並且讓自己的心情得到平靜。你也想穿著帥氣的裝備迷倒大家嗎?快來加入我們吧。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>星期一19:00~21:00 星期三10:00~12:00 體育館地下一樓射箭場</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康18-射箭社社徽.png" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>哈囉各位新生，我們的社團博覽會攤位在10號喔，我們有好玩的遊戲和小禮物，一起來體驗射箭吧。</h3></div>
+		</div>
+		<div id="h19" class="group_block">
+			<div class="group_logo"><img src="img/康19-FUNK舞蹈社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">FUNK舞蹈社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">Level‧4 <br>屬性：Popping & Locking & Breaking<br> 技能：電流 & 鎖定 & 轟炸<br>出沒地點：GAB101<br>出沒時間：每周三晚上7點<br>捕獲機率：87%<br>歡迎到活動中心地下室巧遇我們~</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周三晚上7:00~9:00 GAB101</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>不管你有沒有接觸過舞蹈只要想學、想跳舞、想享受Spot Light的感覺隨時歡迎找我們一起跳舞!!!</h3></div>
+		</div>
+		<div id="h20" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">競技啦啦社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">熱情、活力、青春洋溢就是我們的寫照，我們總是在舞台上散播歡樂的種子，雲科中最具特色的社團就是我們──競技啦啦社。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每週一及週四、晚上6:30，我們在活動中心二樓東側等你一起來當空中飛人喔~~</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康20-競技啦啦社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>厭倦了讀書的日子，這裡絕對是你的第一首選~~加入我們吧！啦啦社讓你體驗到不曾感受的新鮮與刺激喔！9/7(三)社團博覽會、水塔前廣場，聽覺與視覺的震撼饗宴，你不容錯過喔！</h3></div>
+		</div>
+		<div id="h21" class="group_block">
+			<div class="group_logo"><img src="img/康21-王牌主持社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">王牌主持社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">培養對於主持能力、說話技巧有興趣的人才，彼此交流切磋，找出個人魅力！</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周一 19:00-21:00 GAB105</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>哈囉～大家好！我們在社團博覽會的9號攤位喔！另外，社博的舞台上也看的到主持社的身影唷！王牌主持社，歡迎你們來參加！</h3></div>
+		</div>
+		<div id="h22" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">戲劇社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">透過戲劇的方式，展現自己吧！想要瘋狂的表演不再只是夢想！戲劇社為你提供一個漂亮的舞台！和戲劇社一起瘋狂玩戲劇吧！</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周一晚上19:00-21:00 GA132</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康22-戲劇社Logo.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>社博攤位在：門口左側第四攤！想學會怎麼展現自己嗎？想學會怎麼演戲、撰寫劇本、影片剪輯嗎？想在生活中增添樂趣嗎？戲劇社迎新在9/12，與你一起瘋狂玩戲劇！</h3></div>
+		</div>
+		<div id="h23" class="group_block">
+			<div class="group_logo"><img src="img/康23-熾舞社.png" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">熾舞社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">大家好~我們是熾舞社全校唯一能夠用火的社團還有著專業火舞團老師的指導更能認識外校火舞社及其他火舞者呢每週二下午七點到九點， 活動中心二樓西側中庭等你來喔</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每週二下午7點到九點， 活動中心二樓西側中庭 另外有不定時的團練喔</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>有想要一個不一樣的大學生活嗎？那就加入全雲科唯一玩火玩到專業的社團吧！不僅能有特殊的體驗，獨一無二的大頭照，還會培訓大家參加街頭藝人考試 雲科Yuntech熾舞社等你一起來GO FIRE</h3></div>
+		</div>
+		<div id="h24" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">原住民青年社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">我們是一群熱血的大學生，熱愛原住民文化，我們聚集在一起，傳承美麗的文化，無論是不是原住民，無論是不是來自部落，都歡迎加入這個家庭，一起認識及傳承原住民文化。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>星期一晚上7:00-9:00</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康24-原住民青年社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>不管是不是原住民都可以來參加哦！我們社博攤位在２２號，歡迎一起來玩唷！</h3></div>
+		</div>
+		<div id="h25" class="group_block">
+			<div class="group_logo"><img src="img/康25-中華武藝研習社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">中華武藝研習社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">想要帥氣的表演嗎？想成為武林高手嗎？中華武藝研習社歡迎所有對中華武術有興趣的同學。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周一晚上7:00~9:00在GAB108，每周三晚上6:30~8:30在柔道教室</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>各位新生大家好，我們社博攤位在41號是社博的第二個表演，歡迎來逛攤位跟看表演喔！</h3></div>
+		</div>
+		<div id="h26" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">生存遊戲社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">玩SF，CS或AVA等FPS遊戲已經覺得不夠，想親身體會決勝時刻，戰地風雲那種在砲火間的戰術和交戰嗎？或是一直想當戰爭動作片的英雄大兵，破門、在建築間游擊或是解決公寓中的狙擊手嗎？對槍械有興趣，但又礙於方法和實地操作嗎？馬上加入"國立雲林科技大學 生存遊戲社"這裡絕對是你的家~~~~~~~~~(･ิω･ิ)</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>星期一 晚上7:00  GA253集合</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/生存遊戲社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>歡迎新生 讚嘆新生 感嘆新生要被教授當時我們可以給你武力上支持要整人時也能當社工幫你同學查個水表要告白時也能幫你營造絕佳劇情快一起來加入我們吧!</h3></div>
+		</div>
+		<div id="h27" class="group_block">
+			<div class="group_logo"><img src="img/康27-嘻研社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">嘻哈研究社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">一枝筆<br>一首BEAT<br>一支麥克風<br>一罐噴漆<br>寬鬆的衣著<br>沉醉在這迷人的音樂裡忘記身上所背負的重擔，用Old School曲風描寫自己的故事，沒有任何框架盡情享受說話的藝術。</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每週三晚上19:00-21:00 GA245</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>嘻哈是甚麼？或許答案就在你身上。饒舌 塗鴉 滑板 beatbox等等，不再是你遙不可及的夢想，你是否適合?發掘的方法就是去嘗試。來和我們混在一起，一頭栽進這街頭文化裡。</h3></div>
+		</div>
+		<div id="h28" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">雲科Lu果瑜珈社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲科Lu果瑜珈社(Power Yoga)有別於傳統瑜珈主要是訓練「核心肌群」雕塑「身材曲線」不是想像中的拉拉筋骨而已哦~</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周二晚上18:50-20:00 柔道教室</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/康28-雲科Lu果瑜珈社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>哈囉~各位新生好，Power Yoga不但能放鬆身心靈，還能雕塑身材，所以如果你想要瘦身練曲線，歡迎來社團博覽會01號攤位找我們唷，期待你們的加入~</h3></div>
+		</div>
+		<div id="n" class="six_group_title"><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"><h1 style="display:inline-block; font-size:25pt; color:#e9bf33;">服務性社團</h1><img src="bird.png" style="display:inline-block; height:auto; width: 7%;"></div>
+		<div id="n01" class="group_block">
+			<div class="group_logo"><img src="img/服01-聆韻社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">聆韻社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">聆韻社是服務性社團唷跟你們想的樂器呀信仰呀一點關係都沒有…簡單來說聆韻社是聆聽心靈的韻律，Listen To Your Heart，透過服務的過程，讓自己有所學習、成長。想要更加認識我們的新生們歡迎參加我們週二晚上19:00-21:00 GA301的社課，體驗不同以往的大學生活!</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>週二晚上19:00-21:00 GA301</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>HI~各位年輕的學弟學妹們，我們是聆韻社，在社團博覽會42號(靠近C棟)有擺攤唷，希望你們一定要來…做什麼呢? 來了就知道了!</h3></div>
+		</div>
+		<div id="n02" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">春暉社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">春暉，不是你想像的那樣，一樣的反五毒，用各式不同的活動來呈現，像是營隊、監獄參訪、運動比賽等，你的大學生活絕對天天精彩！來春暉找你的春天吧！</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每週一晚上7：00在GA244</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/服02-春暉社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>大一的鮮肉嫩妹們，想要有個熱血的大學生活嗎？那就快來春暉社和我們一起玩樂服務吧！9／7社團博覽會記得來找我們唷！9／19春暉迎新歡迎你們來玩～～</h3></div>
+		</div>
+		<div id="n03" class="group_block">
+			<div class="group_logo"><img src="img/服03-雲心救護社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">雲心救護社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">以急救技術為根本，我們會於寒、暑假去帶營隊，還有機會當講師來教授學員急救知識。沒帶過營隊，千萬別稱自己為大學生，快加入我們這溫暖的大家庭吧 ! </h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每週四晚上19:00-21:00，活動中心 GA107</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>在這邊你可以學習豐富的急救知識、找到溫暖和交到知心好友，給自己一個不後悔的大學生活，加入我們吧 ! 我們在社團博覽會51號攤位等你們。</h3></div>
+		</div>
+		<div id="n04" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">雲大羅浮群<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">雲大羅浮群 特色是童軍、康輔所組成，大學我們則稱羅浮群。童軍往往給大家很死板的刻板印象，錯錯錯不適你們想得如此，我們就是一群志同道合，有想法一起玩一起瘋一起辦活動像家人的一群人，想體驗不同的大學生活就趕快加入羅浮大家庭的行列吧。</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每周三晚上19:00~21:00&GAB108</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/服04-雲大羅浮群.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>想提早感受不同的大學生活嗎~想過的與別人不同嗎~想認識志同道合的朋友嗎~那就趕快加入羅浮大家庭的行列吧 有想法有衝勁想比別人不同就趕快來吧  社團博覽會32號有意願也可以FB私訊雲大羅浮群https://www.facebook.com/yuntechrover/?fref=ts</h3></div>
+		</div>
+		<div id="n05" class="group_block">
+			<div class="group_logo"><img src="img/服05-雲大社區服務團.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">社區服務團<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">右上左下CS，就是我們社區服務團，我們聚集著一群對服務有熱忱的人，我們服務對象很廣，歡迎大家來認識我們~</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每週四晚上 19:00-21:00 GA245</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>安安~各位新鮮人~我們社區服務團的攤位在面對舞台右手邊，想認識我們~事不宜遲啊!!</h3></div>
+		</div>
+		<div id="n06" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">紅筠攜手社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">紅筠攜手社是個充滿愛與希望與和平的社團，主要是以「營隊」的方式回饋社會的呦～身為個一個大學生怎麼能沒帶過營隊！？想體驗我們的熱血、我們獨特的遊戲，就來16號攤位吧！</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每個禮拜四晚上7:00~9:00 每個禮拜四晚上7:00~9:00 每個禮拜四晚上7:00~9:00 詳情可以發摟我們的FB粉專喔!!!!!</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/服07-紅筠攜手社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>：甚麼！你沒玩過紅筠攜手社的遊戲！？<br>不信你去問瘦子他也說<br>：參加紅筠攜手社的活動！<br>不信你去問小智他也說<br>：紅筠攜手社的營隊超熱血啊！<br>你還在等甚麼！？</h3></div>
+		</div>
+		<div id="n07" class="group_block">
+			<div class="group_logo"><img src="img/服08-雲科大汪汪社.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_content" style="left: 2%;">
+				<h1 style="color:#081340">汪汪社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">本社團以『關懷動物、尊重生命』為出發點，透過宣導『以結紮代替撲殺，以認養代替購買』的理念，喚起雲科大師生們對流浪動物的關懷，希望創造一個『人犬和諧的環境』</h3><h2 style="margin-top:20px; color:#264d72">集社時間&地點</h2><h3>每周三的晚上7:00~9:00 GA247</h3>
+			</div>
+			<div class="group_tonew"><h2 style="color:#264d72">想對YunTech新鮮人說</h2><h3>大家好~我們是雲科大汪汪社 喜歡貓狗的你(妳)絕對不能錯過加入這個愛貓愛狗大家庭的機會喔!! 社團博覽會我們在50號攤位等妳喔~!! 請大家告訴大家 帶朋友一起來玩吧~!!</h3></div>
+		</div>
+		<div id="n08" class="group_block">
+			<div class="group_content">
+				<h1 style="color:#081340">雲大慈青社<hr style="align: left; margin-top: 2px;" size="4" color="#ee8886"></h1>
+				<h3 style="margin-top: 5px;">誰說大學交不到知心朋友呢？慈青社能吃能玩，最值得的是交到志同道合的好友。服務範圍不分男女，老少咸宜，甚至廣至愛護地球，動手做環保！加入慈青社，拓展眼界、開闊心胸！</h3><h2 style="margin-top:20px; color:#264d72;">集社時間&地點</h2><h3>每週四晚上 19:00-21:00 GA245</h3>
+			</div>			
+			<div class="group_logo" style="left: 2%"><img src="img/out.jpg" style="max-width:100%; height:auto;"></div>
+			<div class="group_tonew"><h2 style="text-align:left; color:#264d72">想對YunTech新鮮人說</h2><h3>我們在社博15號攤位，等你來看表演玩遊戲呦!</h3></div>
+		</div>
+		
+	</div>
+	<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+		<div id="tag">
+			<ul class="bigtag">
+				<li><a id="b_1" href="#" onclick="tagchange(this)">自治性社團</a>
+					<ul class="smalltag">
+						<li id="b_1_1" onclick="tagchange(this)"><a href="#">學生自治會</a></li>
+						<li id="b_1_2" onclick="tagchange(this)"><a href="#">學生宿委自治委員會</a></li>
+						<li id="b_1_3" onclick="tagchange(this)"><a href="#">學生膳食自治委員會</a></li>
+					</ul>
+				</li>	
+				<li><a href="#" id="b_2" onclick="tagchange(this)">學藝性社團</a>
+					<ul class="smalltag">
+						<li id="b_2_1" onclick="tagchange(this)"><a href="#">攝影社</a></li>
+						<li id="b_2_2" onclick="tagchange(this)"><a href="#">陶藝社</a></li>
+						<li id="b_2_3" onclick="tagchange(this)"><a href="#">信望愛社</a></li>
+						<li id="b_2_4" onclick="tagchange(this)"><a href="#">築藝花卉設計社</a></li>
+						<li id="b_2_5" onclick="tagchange(this)"><a href="#">福智青年社</a></li>
+						<li id="b_2_6" onclick="tagchange(this)"><a href="#">櫻華社</a></li>
+						<li id="b_2_7" onclick="tagchange(this)"><a href="#">咖啡文化研習社</a></li>
+						<li id="b_2_8" onclick="tagchange(this)"><a href="#">法輪大法社</a></li>
+						<li id="b_2_9" onclick="tagchange(this)"><a href="#">佛學社</a></li>
+						<li id="b_2_10" onclick="tagchange(this)"><a href="#">塔羅牌研習社</a></li>
+						<li id="b_2_11" onclick="tagchange(this)"><a href="#">大願禪學社</a></li>
+						<li id="b_2_12" onclick="tagchange(this)"><a href="#">荒野保育社</a></li>
+						<li id="b_2_13" onclick="tagchange(this)"><a href="#">機械動力研習社</a></li>
+						<li id="b_2_14" onclick="tagchange(this)"><a href="#">印心社</a></li>
+						<li id="b_2_15" onclick="tagchange(this)"><a href="#">如來實證社</a></li>
+					</ul>
+				</li>
+				<li><a href="#" id="b_3" onclick="tagchange(this)">康樂性社團</a>
+					<ul class="smalltag">
+						<li id="b_3_1" onclick="tagchange(this)"><a href="#">國樂社</a></li>
+						<li id="b_3_2" onclick="tagchange(this)"><a href="#">管樂社</a></li>
+						<li id="b_3_3" onclick="tagchange(this)"><a href="#">民謠吉他社</a></li>
+						<li id="b_3_4" onclick="tagchange(this)"><a href="#">登山社</a></li>
+						<li id="b_3_5" onclick="tagchange(this)"><a href="#">雲大合唱團</a></li>
+						<li id="b_3_6" onclick="tagchange(this)"><a href="#">網球社</a></li>
+						<li id="b_3_7" onclick="tagchange(this)"><a href="#">溜冰社</a></li>
+						<li id="b_3_8" onclick="tagchange(this)"><a href="#">國際標準舞研習社</a></li>
+						<li id="b_3_9" onclick="tagchange(this)"><a href="#">熱門舞蹈社</a></li>
+						<li id="b_3_10" onclick="tagchange(this)"><a href="#">有氧舞蹈社</a></li>
+						<li id="b_3_11" onclick="tagchange(this)"><a href="#">單車社</a></li>
+						<li id="b_3_12" onclick="tagchange(this)"><a href="#">劍道社</a></li>
+						<li id="b_3_13" onclick="tagchange(this)"><a href="#">棋藝社</a></li>
+						<li id="b_3_14" onclick="tagchange(this)"><a href="#">魔幻社</a></li>
+						<li id="b_3_15" onclick="tagchange(this)"><a href="#">拳擊社</a></li>
+						<li id="b_3_16" onclick="tagchange(this)"><a href="#">撞球社</a></li>
+						<li id="b_3_17" onclick="tagchange(this)"><a href="#">鋼琴社</a></li>
+						<li id="b_3_18" onclick="tagchange(this)"><a href="#">射箭社</a></li>
+						<li id="b_3_19" onclick="tagchange(this)"><a href="#">FUNK舞蹈社</a></li>
+						<li id="b_3_20" onclick="tagchange(this)"><a href="#">競技啦啦社</a></li>
+						<li id="b_3_21" onclick="tagchange(this)"><a href="#">王牌主持社</a></li>
+						<li id="b_3_22" onclick="tagchange(this)"><a href="#">戲劇社</a></li>
+						<li id="b_3_23" onclick="tagchange(this)"><a href="#">熾舞社</a></li>
+						<li id="b_3_24" onclick="tagchange(this)"><a href="#">原住民青年社</a></li>
+						<li id="b_3_25" onclick="tagchange(this)"><a href="#">中華武藝研習社</a></li>
+						<li id="b_3_26" onclick="tagchange(this)"><a href="#">生存遊戲社</a></li>
+						<li id="b_3_27" onclick="tagchange(this)"><a href="#">嘻哈研究社</a></li>
+						<li id="b_3_28" onclick="tagchange(this)"><a href="#">雲科Lu果瑜珈社</a></li>
+					</ul>
+				</li>
+				<li><a href="#" id="b_4" onclick="tagchange(this)">服務性社團</a>
+					<ul class="smalltag">
+						<li id="b_4_1" onclick="tagchange(this)"><a href="#">聆韻社</a></li>
+						<li id="b_4_2" onclick="tagchange(this)"><a href="#">春暉社</a></li>
+						<li id="b_4_3" onclick="tagchange(this)"><a href="#">雲心救護社</a></li>
+						<li id="b_4_4" onclick="tagchange(this)"><a href="#">雲大羅浮群</a></li>
+						<li id="b_4_5" onclick="tagchange(this)"><a href="#">社區服務團</a></li>
+						<li id="b_4_6" onclick="tagchange(this)"><a href="#">紅筠攜手社</a></li>
+						<li id="b_4_7" onclick="tagchange(this)"><a href="#">汪汪社</a></li>
+						<li id="b_4_8" onclick="tagchange(this)"><a href="#">雲大慈青社</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	
+
+</body>
+<footer>
+
+</footer>
+</html>

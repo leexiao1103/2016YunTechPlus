@@ -1,0 +1,2600 @@
+
+
+#associations_container{
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	top: 20vh;
+	display: none;
+	min-width: 600px;
+	min-height: 530px;
+	width: 70vw;
+	height: auto;
+}
+ul.associationstag{
+	
+}
+
+ul.associationstag > li{    
+	display: inline-block;
+	font-size: 16pt;
+	cursor:pointer;
+	border-left:2px solid #e6b225;
+	padding-left: 10px;	
+	text-align:left;
+}
+ul.associationstag > li ul{
+	display: none;
+	position: absolute;
+	z-index:2200;
+}
+ul.associationstag > li:hover > ul{
+	display: block;
+  background-color: #fff;
+  font-size: 12pt;
+  -webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	transition: 0.5s ease;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+ul.associationstag > li:hover > ul > li{
+	
+  padding: 10px 10px 10px 5px;
+  border-left:2px solid #e6b225;
+}
+ul.associationstag > li:hover > ul > li:hover{
+	background-color:#e6b225;
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+#associationsteam{	
+	position: relative;
+	width: 900px;
+	min-height: 530px;
+	height: 520px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	z-index:2000;
+}
+.TextAss{
+	position: absolute;
+	width:900px;
+	text-align: center;
+	text-shadow: 0 2px 5px rgb( 150, 50, 50 );
+	color: #555;
+	line-height: 28pt;
+}
+.TextAss div{
+	position: relative;
+}
+.nameAss{
+	font-size: 20pt;
+	animation-duration: 0.5s;
+}
+.pictext1Ass{	
+	font-size: 14pt;			
+	animation-duration: 0.6s;
+}
+.pictext2Ass{
+	position: absolute;
+	width:100%;
+	text-align: center;
+	text-shadow: 0 2px 5px rgb( 150, 50, 50 );
+	color: #555;
+	line-height: 30pt;
+	font-size: 24pt;
+	bottom: 0;
+	animation-duration: 0.7s;
+}
+.coinAss{
+	position:absolute;
+	display: block;
+	width: 300px;
+	height: 300px;
+	left:33%;
+	bottom: 13%;
+	border: 7px solid #06375d;
+	border-radius: 5050px;
+	z-index: 5;	
+	box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+	
+}
+.smallcoinAss{
+	position:absolute;
+	display: block;
+	width: 70px;
+	height: 70px;
+	border: 2px solid #06375d;
+	border-radius: 5050px;
+	cursor: pointer;
+	z-index: 1;
+	box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+	-webkit-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+@keyframes slidein{
+	from{
+		-webkit-transform: rotateX(0deg); /* Safari */
+		transform: rotateX(0deg);
+		bottom: -40px;
+		opacity: 0;
+	}
+	70%{bottom:30px;}
+	to{
+		-webkit-transform: rotateX(720deg); /* Safari */
+		transform: rotateX(720deg);
+		bottom: 0px;		
+		opacity: 1;
+	}
+}
+#AAgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#BBgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#CCgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#EEgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#FFgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#GGgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#HHgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#IIgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#JJgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#KKgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#LLgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#MMgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#NNgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#OOgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#PPgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#QQgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#RRgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#SSgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#TTgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#UUgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#VVgroup{
+	position: absolute;
+	width: 100%;
+	min-height: 530px;
+	height: 515px;
+}
+#coinAss1{
+	left:5%;
+	top: 30%;
+}
+#coinAss1.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss2{
+	left:20%;
+	top: 30%;
+}
+#coinAss2.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss3{
+	left:2%;
+	top: 50%;
+}
+#coinAss3.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss4{
+	left:16%;
+	top: 50%;
+}
+#coinAss4.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss5{
+	left:7%;
+	top: 70%;
+}
+#coinAss5.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss6{
+	left:23%;
+	top: 67%;
+}
+#coinAss6.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss7{
+	left:17%;
+	top: 85%;
+}
+#coinAss7.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss8{
+	left:70%;
+	top: 25%;
+}
+#coinAss8.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss9{
+	left:90%;
+	top: 28%;
+}
+#coinAss9.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss10{
+	left:79%;
+	top: 38%;
+}
+#coinAss10.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss11{
+	left:70%;
+	top: 49%;
+}
+#coinAss11.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss12{
+	left:88%;
+	top: 52%;
+}
+#coinAss12.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss13{
+	left:78%;
+	top: 63%;
+}
+#coinAss13.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss14{
+	left:67%;
+	top: 74%;
+}
+#coinAss14.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss15{
+	left:90%;
+	top: 74%;
+}
+#coinAss15.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss16{
+	left:79%;
+	top: 85%;
+}
+#coinAss16.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss17{
+	left:0;
+	top: 85%;
+}
+#coinAss17.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss18{
+	left:5%;
+	top: 30%;
+}
+#coinAss18.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss19{
+	left:20%;
+	top: 35%;
+}
+#coinAss19.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss20{
+	left:2%;
+	top: 53%;
+}
+#coinAss20.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss21{
+	left:16%;
+	top: 53%;
+}
+#coinAss21.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss22{
+	left:6%;
+	top: 75%;
+}
+#coinAss22.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss23{
+	left:21%;
+	top: 71%;
+}
+#coinAss23.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss24{
+	left:73%;
+	top: 35%;
+}
+#coinAss24.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss25{
+	left:87%;
+	top: 30%;
+}
+#coinAss25.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss26{
+	left:78%;
+	top: 53%;
+}
+#coinAss26.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss27{
+	left:90%;
+	top: 53%;
+}
+#coinAss27.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss28{
+	left:73%;
+	top: 71%;
+}
+#coinAss28.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss29{
+	left:87%;
+	top: 75%;
+}
+#coinAss29.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss30{
+	left:5%;
+	top: 30%;
+}
+#coinAss30.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss31{
+	left:20%;
+	top: 30%;
+}
+#coinAss31.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss32{
+	left:2%;
+	top: 50%;
+}
+#coinAss32.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss33{
+	left:16%;
+	top: 50%;
+}
+#coinAss33.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss34{
+	left:7%;
+	top: 70%;
+}
+#coinAss34.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss35{
+	left:23%;
+	top: 67%;
+}
+#coinAss35.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss36{
+	left:75%;
+	top: 80%;
+}
+#coinAss36.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss37{
+	left:70%;
+	top: 25%;
+}
+#coinAss37.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss38{
+	left:90%;
+	top: 28%;
+}
+#coinAss38.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss39{
+	left:79%;
+	top: 38%;
+}
+#coinAss39.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss40{
+	left:70%;
+	top: 49%;
+}
+#coinAss40.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss41{
+	left:88%;
+	top: 52%;
+}
+#coinAss41.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss42{
+	left:78%;
+	top: 63%;
+}
+#coinAss42.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss43{
+	left:5%;
+	top: 30%;
+}
+#coinAss43.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss44{
+	left:20%;
+	top: 35%;
+}
+#coinAss44.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss45{
+	left:2%;
+	top: 53%;
+}
+#coinAss45.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss46{
+	left:16%;
+	top: 53%;
+}
+#coinAss46.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss47{
+	left:6%;
+	top: 75%;
+}
+#coinAss47.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss48{
+	left:21%;
+	top: 71%;
+}
+#coinAss48.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss49{
+	left:73%;
+	top: 35%;
+}
+#coinAss49.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss50{
+	left:87%;
+	top: 30%;
+}
+#coinAss50.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss51{
+	left:78%;
+	top: 53%;
+}
+#coinAss51.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss52{
+	left:90%;
+	top: 53%;
+}
+#coinAss52.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss53{
+	left:73%;
+	top: 71%;
+}
+#coinAss53.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss54{
+	left:87%;
+	top: 75%;
+}
+#coinAss54.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss55{
+	left:5%;
+	top: 22%;
+}
+#coinAss55.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss56{
+	left:20%;
+	top: 22%;
+}
+#coinAss56.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss57{
+	left:5%;
+	top: 37%;
+}
+#coinAss57.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss58{
+	left:20%;
+	top: 37%;
+}
+#coinAss58.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss59{
+	left:5%;
+	top: 52%;
+}
+#coinAss59.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss60{
+	left:20%;
+	top: 52%;
+}
+#coinAss60.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss61{
+	left:5%;
+	top: 67%;
+}
+#coinAss61.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss62{
+	left:20%;
+	top: 67%;
+}
+#coinAss62.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss63{
+	left:5%;
+	top: 82%;
+}
+#coinAss63.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss64{
+	left:20%;
+	top: 82%;
+}
+#coinAss64.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss65{
+	left:72%;
+	top: 22%;
+}
+#coinAss65.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss66{
+	left:87%;
+	top: 22%;
+}
+#coinAss66.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss67{
+	left:72%;
+	top: 37%;
+}
+#coinAss67.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss68{
+	left:87%;
+	top: 37%;
+}
+#coinAss68.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss69{
+	left:72%;
+	top: 52%;
+}
+#coinAss69.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss70{
+	left:87%;
+	top: 52%;
+}
+#coinAss70.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss71{
+	left:72%;
+	top: 67%;
+}
+#coinAss71.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss72{
+	left:87%;
+	top: 67%;
+}
+#coinAss72.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss73{
+	left:72%;
+	top: 82%;
+}
+#coinAss73.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss74{
+	left:87%;
+	top: 82%;
+}
+#coinAss74.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss75{
+	left:5%;
+	top: 30%;
+}
+#coinAss75.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss76{
+	left:20%;
+	top: 35%;
+}
+#coinAss76.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss77{
+	left:2%;
+	top: 53%;
+}
+#coinAss77.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss78{
+	left:16%;
+	top: 53%;
+}
+#coinAss78.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss79{
+	left:6%;
+	top: 75%;
+}
+#coinAss79.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss80{
+	left:21%;
+	top: 71%;
+}
+#coinAss80.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss81{
+	left:73%;
+	top: 35%;
+}
+#coinAss81.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss82{
+	left:87%;
+	top: 30%;
+}
+#coinAss82.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss83{
+	left:78%;
+	top: 53%;
+}
+#coinAss83.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss84{
+	left:90%;
+	top: 53%;
+}
+#coinAss84.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss85{
+	left:73%;
+	top: 71%;
+}
+#coinAss85.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss86{
+	left:87%;
+	top: 75%;
+}
+#coinAss86.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss87{
+	left:11%;
+	top: 30%;
+}
+#coinAss87.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss88{
+	left:2%;
+	top: 50%;
+}
+#coinAss88.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss89{
+	left:20%;
+	top: 50%;
+}
+#coinAss89.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss90{
+	left:11%;
+	top: 70%;
+}
+#coinAss90.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss91{
+	left:82%;
+	top: 30%;
+}
+#coinAss91.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss92{
+	left:73%;
+	top: 50%;
+}
+#coinAss92.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss93{
+	left:91%;
+	top: 50%;
+}
+#coinAss93.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss94{
+	left:82%;
+	top: 70%;
+}
+#coinAss94.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss95{
+	left:5%;
+	top: 30%;
+}
+#coinAss95.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss96{
+	left:20%;
+	top: 30%;
+}
+#coinAss96.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss97{
+	left:2%;
+	top: 50%;
+}
+#coinAss97.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss98{
+	left:16%;
+	top: 50%;
+}
+#coinAss98.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss99{
+	left:7%;
+	top: 70%;
+}
+#coinAss99.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss100{
+	left:23%;
+	top: 67%;
+}
+#coinAss100.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss101{
+	left:17%;
+	top: 85%;
+}
+#coinAss101.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss102{
+	left:70%;
+	top: 25%;
+}
+#coinAss102.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss103{
+	left:90%;
+	top: 28%;
+}
+#coinAss103.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss104{
+	left:79%;
+	top: 38%;
+}
+#coinAss104.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss105{
+	left:70%;
+	top: 49%;
+}
+#coinAss105.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss106{
+	left:88%;
+	top: 52%;
+}
+#coinAss106.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss107{
+	left:78%;
+	top: 63%;
+}
+#coinAss107.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss108{
+	left:67%;
+	top: 74%;
+}
+#coinAss108.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss109{
+	left:90%;
+	top: 74%;
+}
+#coinAss109.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss110{
+	left:79%;
+	top: 85%;
+}
+#coinAss110.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss111{
+	left:11%;
+	top: 30%;
+}
+#coinAss111.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss112{
+	left:2%;
+	top: 50%;
+}
+#coinAss112.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss113{
+	left:20%;
+	top: 50%;
+}
+#coinAss113.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss114{
+	left:11%;
+	top: 70%;
+}
+#coinAss114.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss115{
+	left:82%;
+	top: 30%;
+}
+#coinAss115.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss116{
+	left:73%;
+	top: 50%;
+}
+#coinAss116.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss117{
+	left:91%;
+	top: 50%;
+}
+#coinAss117.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss118{
+	left:82%;
+	top: 70%;
+}
+#coinAss118.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss119{
+	left:5%;
+	top: 22%;
+}
+#coinAss119.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss120{
+	left:20%;
+	top: 22%;
+}
+#coinAss120.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss121{
+	left:5%;
+	top: 37%;
+}
+#coinAss121.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss122{
+	left:20%;
+	top: 37%;
+}
+#coinAss122.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss123{
+	left:5%;
+	top: 52%;
+}
+#coinAss123.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss124{
+	left:20%;
+	top: 52%;
+}
+#coinAss124.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss125{
+	left:5%;
+	top: 67%;
+}
+#coinAss125.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss126{
+	left:20%;
+	top: 67%;
+}
+#coinAss126.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss127{
+	left:5%;
+	top: 82%;
+}
+#coinAss127.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss128{
+	left:20%;
+	top: 82%;
+}
+#coinAss128.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss129{
+	left:72%;
+	top: 22%;
+}
+#coinAss129.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss130{
+	left:87%;
+	top: 22%;
+}
+#coinAss130.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss131{
+	left:72%;
+	top: 37%;
+}
+#coinAss131.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss132{
+	left:87%;
+	top: 37%;
+}
+#coinAss132.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss133{
+	left:72%;
+	top: 52%;
+}
+#coinAss133.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss134{
+	left:87%;
+	top: 52%;
+}
+#coinAss134.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss135{
+	left:72%;
+	top: 67%;
+}
+#coinAss135.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss136{
+	left:87%;
+	top: 67%;
+}
+#coinAss136.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss137{
+	left:72%;
+	top: 82%;
+}
+#coinAss137.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss138{
+	left:87%;
+	top: 82%;
+}
+#coinAss138.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss139{
+	left:5%;
+	top: 30%;
+}
+#coinAss139.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss140{
+	left:20%;
+	top: 35%;
+}
+#coinAss140.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss141{
+	left:2%;
+	top: 53%;
+}
+#coinAss141.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss142{
+	left:16%;
+	top: 53%;
+}
+#coinAss142.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss143{
+	left:6%;
+	top: 75%;
+}
+#coinAss143.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss144{
+	left:21%;
+	top: 71%;
+}
+#coinAss144.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss145{
+	left:73%;
+	top: 35%;
+}
+#coinAss145.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss146{
+	left:87%;
+	top: 30%;
+}
+#coinAss146.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss147{
+	left:78%;
+	top: 53%;
+}
+#coinAss147.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss148{
+	left:90%;
+	top: 53%;
+}
+#coinAss148.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss149{
+	left:73%;
+	top: 71%;
+}
+#coinAss149.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss150{
+	left:87%;
+	top: 75%;
+}
+#coinAss150.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss151{
+	left:5%;
+	top: 30%;
+}
+#coinAss151.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss152{
+	left:20%;
+	top: 35%;
+}
+#coinAss152.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss153{
+	left:2%;
+	top: 53%;
+}
+#coinAss153.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss154{
+	left:16%;
+	top: 53%;
+}
+#coinAss154.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss155{
+	left:6%;
+	top: 75%;
+}
+#coinAss155.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss156{
+	left:21%;
+	top: 71%;
+}
+#coinAss156.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss157{
+	left:73%;
+	top: 35%;
+}
+#coinAss157.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss158{
+	left:87%;
+	top: 30%;
+}
+#coinAss158.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss159{
+	left:78%;
+	top: 53%;
+}
+#coinAss159.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss160{
+	left:90%;
+	top: 53%;
+}
+#coinAss160.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss161{
+	left:73%;
+	top: 71%;
+}
+#coinAss161.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss162{
+	left:87%;
+	top: 75%;
+}
+#coinAss162.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss163{
+	left:5%;
+	top: 30%;
+}
+#coinAss163.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss164{
+	left:20%;
+	top: 30%;
+}
+#coinAss164.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss165{
+	left:2%;
+	top: 50%;
+}
+#coinAss165.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss166{
+	left:16%;
+	top: 50%;
+}
+#coinAss166.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss167{
+	left:7%;
+	top: 70%;
+}
+#coinAss167.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss168{
+	left:23%;
+	top: 67%;
+}
+#coinAss168.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss169{
+	left:17%;
+	top: 85%;
+}
+#coinAss169.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss170{
+	left:70%;
+	top: 25%;
+}
+#coinAss170.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss171{
+	left:90%;
+	top: 28%;
+}
+#coinAss171.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss172{
+	left:79%;
+	top: 38%;
+}
+#coinAss172.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss173{
+	left:70%;
+	top: 49%;
+}
+#coinAss173.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss174{
+	left:88%;
+	top: 52%;
+}
+#coinAss174.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss175{
+	left:67%;
+	top: 74%;
+}
+#coinAss175.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss176{
+	left:83%;
+	top: 73%;
+}
+#coinAss176.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss177{
+	left:5%;
+	top: 30%;
+}
+#coinAss177.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss178{
+	left:20%;
+	top: 35%;
+}
+#coinAss178.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss179{
+	left:2%;
+	top: 53%;
+}
+#coinAss179.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss180{
+	left:16%;
+	top: 53%;
+}
+#coinAss180.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss181{
+	left:6%;
+	top: 75%;
+}
+#coinAss181.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss182{
+	left:21%;
+	top: 71%;
+}
+#coinAss182.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss183{
+	left:73%;
+	top: 35%;
+}
+#coinAss183.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss184{
+	left:87%;
+	top: 30%;
+}
+#coinAss184.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss185{
+	left:78%;
+	top: 53%;
+}
+#coinAss185.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss186{
+	left:90%;
+	top: 53%;
+}
+#coinAss186.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss187{
+	left:73%;
+	top: 71%;
+}
+#coinAss187.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss188{
+	left:87%;
+	top: 75%;
+}
+#coinAss188.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss189{
+	left:5%;
+	top: 30%;
+}
+#coinAss189.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss190{
+	left:20%;
+	top: 30%;
+}
+#coinAss190.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss191{
+	left:2%;
+	top: 50%;
+}
+#coinAss191.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss192{
+	left:16%;
+	top: 50%;
+}
+#coinAss192.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss193{
+	left:7%;
+	top: 70%;
+}
+#coinAss193.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss194{
+	left:23%;
+	top: 67%;
+}
+#coinAss194.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss195{
+	left:17%;
+	top: 85%;
+}
+#coinAss195.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss196{
+	left:70%;
+	top: 25%;
+}
+#coinAss196.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss197{
+	left:90%;
+	top: 28%;
+}
+#coinAss197.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss198{
+	left:79%;
+	top: 38%;
+}
+#coinAss198.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss199{
+	left:70%;
+	top: 49%;
+}
+#coinAss199.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss200{
+	left:88%;
+	top: 52%;
+}
+#coinAss200.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss201{
+	left:67%;
+	top: 74%;
+}
+#coinAss201.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss202{
+	left:83%;
+	top: 73%;
+}
+#coinAss202.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss203{
+	left:5%;
+	top: 30%;
+}
+#coinAss203.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss204{
+	left:20%;
+	top: 35%;
+}
+#coinAss204.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss205{
+	left:2%;
+	top: 53%;
+}
+#coinAss205.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss206{
+	left:16%;
+	top: 53%;
+}
+#coinAss206.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss207{
+	left:6%;
+	top: 75%;
+}
+#coinAss207.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss208{
+	left:21%;
+	top: 71%;
+}
+#coinAss208.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss209{
+	left:73%;
+	top: 35%;
+}
+#coinAss209.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss210{
+	left:87%;
+	top: 30%;
+}
+#coinAss210.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss211{
+	left:78%;
+	top: 53%;
+}
+#coinAss211.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss212{
+	left:90%;
+	top: 53%;
+}
+#coinAss212.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss213{
+	left:73%;
+	top: 71%;
+}
+#coinAss213.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss214{
+	left:87%;
+	top: 75%;
+}
+#coinAss214.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss215{
+	left:5%;
+	top: 30%;
+}
+#coinAss215.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss216{
+	left:20%;
+	top: 30%;
+}
+#coinAss216.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss217{
+	left:12.5%;
+	top: 50%;
+}
+#coinAss217.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss218{
+	left:5%;
+	top: 70%;
+}
+#coinAss218.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss219{
+	left:20%;
+	top: 70%;
+}
+#coinAss219.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss220{
+	left:73%;
+	top: 30%;
+}
+#coinAss220.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss221{
+	left:88%;
+	top: 30%;
+}
+#coinAss221.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss222{
+	left:80.5%;
+	top: 50%;
+}
+#coinAss222.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss223{
+	left:73%;
+	top: 70%;
+}
+#coinAss223.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss224{
+	left:88%;
+	top: 70%;
+}
+#coinAss224.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss225{
+	left:5%;
+	top: 30%;
+}
+#coinAss225.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss226{
+	left:20%;
+	top: 30%;
+}
+#coinAss226.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss227{
+	left:12.5%;
+	top: 50%;
+}
+#coinAss227.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss228{
+	left:5%;
+	top: 70%;
+}
+#coinAss228.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss229{
+	left:20%;
+	top: 70%;
+}
+#coinAss229.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss230{
+	left:73%;
+	top: 30%;
+}
+#coinAss230.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss231{
+	left:88%;
+	top: 30%;
+}
+#coinAss231.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss232{
+	left:80.5%;
+	top: 50%;
+}
+#coinAss232.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss233{
+	left:73%;
+	top: 70%;
+}
+#coinAss233.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss234{
+	left:88%;
+	top: 70%;
+}
+#coinAss234.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss235{
+	left:5%;
+	top: 30%;
+}
+#coinAss235.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss236{
+	left:20%;
+	top: 30%;
+}
+#coinAss236.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss237{
+	left:2%;
+	top: 50%;
+}
+#coinAss237.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss238{
+	left:16%;
+	top: 50%;
+}
+#coinAss238.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss239{
+	left:7%;
+	top: 70%;
+}
+#coinAss239.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss240{
+	left:23%;
+	top: 67%;
+}
+#coinAss240.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss241{
+	left:17%;
+	top: 85%;
+}
+#coinAss241.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss242{
+	left:70%;
+	top: 25%;
+}
+#coinAss242.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss243{
+	left:90%;
+	top: 28%;
+}
+#coinAss243.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss244{
+	left:79%;
+	top: 38%;
+}
+#coinAss244.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss245{
+	left:70%;
+	top: 49%;
+}
+#coinAss245.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss246{
+	left:88%;
+	top: 52%;
+}
+#coinAss246.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss247{
+	left:78%;
+	top: 63%;
+}
+#coinAss247.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss248{
+	left:67%;
+	top: 74%;
+}
+#coinAss248.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss249{
+	left:90%;
+	top: 74%;
+}
+#coinAss249.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss250{
+	left:79%;
+	top: 85%;
+}
+#coinAss250.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss251{
+	left:5%;
+	top: 30%;
+}
+#coinAss251.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss252{
+	left:20%;
+	top: 30%;
+}
+#coinAss252.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss253{
+	left:2%;
+	top: 50%;
+}
+#coinAss253.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss254{
+	left:16%;
+	top: 50%;
+}
+#coinAss254.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss255{
+	left:7%;
+	top: 70%;
+}
+#coinAss255.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss256{
+	left:23%;
+	top: 67%;
+}
+#coinAss256.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss257{
+	left:17%;
+	top: 85%;
+}
+#coinAss257.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss258{
+	left:70%;
+	top: 25%;
+}
+#coinAss258.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss259{
+	left:90%;
+	top: 28%;
+}
+#coinAss259.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss260{
+	left:79%;
+	top: 38%;
+}
+#coinAss260.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss261{
+	left:70%;
+	top: 49%;
+}
+#coinAss261.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss262{
+	left:88%;
+	top: 52%;
+}
+#coinAss262.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss263{
+	left:67%;
+	top: 74%;
+}
+#coinAss263.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss264{
+	left:83%;
+	top: 73%;
+}
+#coinAss264.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss265{
+	left:0;
+	top: 25%;
+}
+#coinAss265.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss266{
+	left:10%;
+	top: 25%;
+}
+#coinAss266.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss267{
+	left:20%;
+	top: 25%;
+}
+#coinAss267.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss268{
+	left:0;
+	top: 40%;
+}
+#coinAss268.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss269{
+	left:10%;
+	top: 40%;
+}
+#coinAss269.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss270{
+	left:20%;
+	top: 40%;
+}
+#coinAss270.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss271{
+	left:0;
+	top: 55%;
+}
+#coinAss271.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss272{
+	left:10%;
+	top: 55%;
+}
+#coinAss272.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss273{
+	left:20%;
+	top: 55%;
+}
+#coinAss273.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss274{
+	left:0%;
+	top: 70%;
+}
+#coinAss274.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss275{
+	left:10%;
+	top: 70%;
+}
+#coinAss275.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss276{
+	left:20%;
+	top: 70%;
+}
+#coinAss276.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss278{
+	left:0%;
+	top: 85%;
+}
+#coinAss278.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss279{
+	left:10%;
+	top: 85%;
+}
+#coinAss279.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss280{
+	left:20%;
+	top: 85%;
+}
+#coinAss280.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss281{
+	left:71%;
+	top: 25%;
+}
+#coinAss281.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss282{
+	left:81%;
+	top: 25%;
+}
+#coinAss282.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss283{
+	left:91%;
+	top: 25%;
+}
+#coinAss283.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss284{
+	left:71%;
+	top: 40%;
+}
+#coinAss284.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss285{
+	left:81%;
+	top: 40%;
+}
+#coinAss285.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss286{
+	left:91%;
+	top: 40%;
+}
+#coinAss286.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss287{
+	left:71%;
+	top: 55%;
+}
+#coinAss287.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss288{
+	left:81%;
+	top: 55%;
+}
+#coinAss288.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss289{
+	left:91%;
+	top: 55%;
+}
+#coinAss289.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss290{
+	left:71%;
+	top: 70%;
+}
+#coinAss290.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss291{
+	left:81%;
+	top: 70%;
+}
+#coinAss291.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss292{
+	left:91%;
+	top: 70%;
+}
+#coinAss292.selected{
+	left:46%;
+	top:51%;
+}
+#coinAss277{
+	left:71%;
+	top: 85%;
+}
+#coinAss277.selected{
+	left:46%;
+	top:51%;
+}

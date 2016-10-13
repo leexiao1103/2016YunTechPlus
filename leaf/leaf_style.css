@@ -1,0 +1,151 @@
+#leaf1 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+	left: -6%;
+	top: 3%;
+	z-index: 800;
+  
+}
+#leaf2 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+    left: 0;
+    top: -5%;
+	z-index: 800;
+}
+#leaf3 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+    left: 8%;
+    top: 7%;
+	z-index: 800;
+}
+#leaf4 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+    left: 1%;
+    top: 1%;
+	z-index: 800;
+}
+#leaf5 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+	left: -3%;
+	top:39%;
+    z-index: 1000;
+}
+#leaf6 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+	left: 1%;
+	top: 37.1%;
+	z-index: 1000;
+}
+#leaf7 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+	left: 3%;
+	top: 38%;
+	z-index: 1000;
+}
+#leaf8 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:5px 53px;
+	left: 4%;
+	top: 37.1%;
+	z-index: 1000;
+}
+#leaf9 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:53px 5px;
+	right: 7%;
+	top: 5%;
+	z-index: 800;
+}
+#leaf10 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:53px 5px;
+	right: 8%;
+	top: 4%;
+	z-index: 800;
+}
+#leaf11 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:53px 5px;
+	right: 12%;
+	top: 6%;
+	z-index: 800;
+}
+#leaf12 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:53px 5px;
+	right: 13%;
+	top: 7%;
+	z-index: 800;
+}
+#leaf13 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:53px 5px;
+	right: 5%;
+	top: 32%;
+	z-index: 800;
+}
+#leaf14 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:53px 5px;
+	right: 6%;
+	top: 33%;
+	z-index: 800;
+}
+#leaf15 {
+	position:fixed;
+	height:20px;
+	width:20px;
+	background-color:#fa6d75;
+	border-radius:53px 5px;
+	right: 8%;
+	top: 35%;
+	z-index: 800;
+}
